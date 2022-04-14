@@ -1,0 +1,44 @@
+@import url(null.css);
+@import url(fonts.css);
+@import url(stairways.css);
+
+//Adaptive Value
+@mixin adaptiveValue($property, $startSize, $minSize, $widthFrom: $containerWidth, $widthTo: 320) {
+    #{$property}: #{$startSize + px};
+    $addSize: $startSize - $minSize;
+    @media screen and (max-width: #{$containerWidth + px}) {
+        #{$property}: calc(
+            #{$minSize + px} + #{$addSize} * ((100vw - #{$widthTo + px}) / (#{$containerWidth} - #{$widthTo}))
+        );
+    }
+}
+
+//Colors
+$black: #2c2c2c;
+$fontBlack: #000000;
+$listBlack: #444444;
+$grey: #f4f4f4;
+
+//Widths
+$containerWidth: 1200;
+$minWidth: 320;
+$tabletWidth: 768;
+$mobileWidth: 576;
+$largeDesktop: 1440;
+$smallDesktop: 1024;
+
+//Basic styles
+
+* {
+    font-weight: 400;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    &._lock {
+        overflow: hidden;
+    }
+}

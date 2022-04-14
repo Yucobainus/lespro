@@ -1,0 +1,15 @@
+@import url(null.css);
+@import url(fonts.css);
+@import url(stairways.css);
+* {
+  font-weight: 400;
+}
+
+input:focus {
+  outline: none;
+}
+
+body._lock {
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
