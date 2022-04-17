@@ -1,6 +1,7 @@
 @import url(null.css);
-@import url(fonts.css);
+@import url(iconfont.css);
 @import url(stairways.css);
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
 //Adaptive Value
 @mixin adaptiveValue($property, $startSize, $minSize, $widthFrom: $containerWidth, $widthTo: 320) {
@@ -14,23 +15,31 @@
 }
 
 //Colors
-$black: #2c2c2c;
-$fontBlack: #000000;
-$listBlack: #444444;
-$grey: #f4f4f4;
+
+$lightYellow: #ffbb45;
+$yellow: #ffac1b;
+$lightGreen: #32bf73;
+$green: #22a45e;
+$black: #1b1b1b;
+$darkGrey: #595959;
+$grey: #eaeaea;
+$lightGrey: #f9f9f9;
 
 //Widths
-$containerWidth: 1200;
+$containerWidth: 1230;
 $minWidth: 320;
 $tabletWidth: 768;
 $mobileWidth: 576;
 $largeDesktop: 1440;
-$smallDesktop: 1024;
+$smallDesktop: 992;
 
 //Basic styles
 
 * {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
     font-weight: 400;
+    color: $black;
 }
 
 input:focus {
@@ -41,4 +50,291 @@ body {
     &._lock {
         overflow: hidden;
     }
+}
+
+.bg-grey {
+    background-color: $lightGrey;
+}
+
+.bg-dark-grey {
+    background-color: #eaeaea;
+}
+
+//Text-Styles
+
+.text-13 {
+    font-size: 0.813rem;
+}
+
+.text-14 {
+    font-size: 0.875rem;
+}
+
+.text-15 {
+    font-size: 0.938rem;
+}
+
+.text-18 {
+    font-size: 1.125rem;
+}
+
+.text-20 {
+    font-size: 1.25rem;
+}
+
+.text-24 {
+    font-size: 1.5rem;
+}
+
+.text-30 {
+    font-size: 1.875rem;
+}
+
+.text-34 {
+    font-size: 2.125rem;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-medium {
+    font-weight: 500;
+}
+
+.text-semi {
+    font-weight: 600;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-extra {
+    font-weight: 800;
+}
+
+//Margins, Paddings, etc
+
+.row-10 {
+    row-gap: 10px;
+}
+
+.container {
+    max-width: $containerWidth + px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+//Header
+
+.header {
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__head {
+        display: flex;
+        column-gap: 5px;
+        &_nav {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            & ul {
+                display: flex;
+                column-gap: 60px;
+            }
+        }
+        &_info {
+            width: 45%;
+            display: flex;
+            column-gap: 25px;
+        }
+        &_profile {
+            width: 30%;
+        }
+
+        &_info-item {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            & a,
+            span {
+                padding: 0 10px;
+            }
+            &::before {
+                color: $lightGreen;
+            }
+        }
+        &_profile-item {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            & a {
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+                padding: 20px 31px;
+                border-left: 1px solid #eaeaea;
+                border-right: 1px solid #eaeaea;
+            }
+            & a::before {
+                color: $lightGreen;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        padding: 25px 0;
+        column-gap: 5px;
+        @media screen and (max-width: #{$smallDesktop + px}) {
+            column-gap: 20px;
+        }
+        &_logo {
+            width: 25%;
+        }
+
+        &_logo-wrapper {
+            max-width: 244px;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &_info {
+            display: flex;
+            width: 45%;
+            column-gap: 25px;
+            @include adaptiveValue("column-gap", 25, 5, $containerWidth, $smallDesktop);
+            @media screen and (max-width: #{$smallDesktop + px}) {
+                width: 25%;
+                justify-content: center;
+            }
+        }
+        &_info-item {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            & a,
+            span {
+                padding: 0 10px;
+            }
+            &::before {
+                color: $lightGreen;
+            }
+            @media screen and (max-width: #{$smallDesktop + px}) {
+                &:first-child {
+                    display: none;
+                }
+                width: 100%;
+            }
+        }
+        &_info-item-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_profile {
+            width: 30%;
+            column-gap: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width: #{$smallDesktop + px}) {
+                width: 50%;
+            }
+        }
+        &_profile-item {
+            position: relative;
+            display: flex;
+            & .green-btn {
+                padding: 10px 22px;
+            }
+        }
+        &_profile-item-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_cart-counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10px;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #f84f4f;
+            position: absolute;
+        }
+        &_cart {
+            padding: 22px;
+            background-color: #f9f9f9;
+            &::before {
+                color: $lightGreen;
+            }
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        &_nav {
+            & ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                & li {
+                    display: flex;
+                    align-items: center;
+                    padding: 26px 31px;
+                    &::before {
+                        padding-right: 5px;
+                    }
+                    &:hover {
+                        background-color: rgba(255, 187, 69, 0.75);
+                        cursor: pointer;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        &_nav-active {
+            background-color: $lightYellow;
+        }
+        &_nav-icon {
+            position: absolute;
+            right: 10%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &_search {
+            position: relative;
+            max-width: 220px;
+            align-items: center;
+            display: flex;
+            background-color: #efefef;
+            padding: 0 24px;
+            & input[type="text"] {
+                // background-image: url("../icons/search_green.svg");
+                // background-repeat: no-repeat;
+                // background-position: 90% 50%;
+                background-color: #efefef;
+            }
+        }
+    }
+}
+
+.green-btn {
+    background-color: $lightGreen;
+    text-align: center;
+    color: white;
 }
