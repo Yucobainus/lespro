@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" type="text/css" href="src/css/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/slick/slick-theme.css" />
     <title>Главная</title>
 </head>
 
@@ -79,7 +79,7 @@
                     <div class="header__content">
                         <div class="header__content_logo">
                             <div class="header__content_logo-wrapper">
-                                <img src="assets/img/site/logo.png" alt="logo">
+                                <img src="../assets/img/site/logo.png" alt="logo">
                             </div>
                         </div>
 
@@ -168,7 +168,7 @@
                         </nav>
                         <div class="header__navigation_search">
                             <div class="header__navigation_nav-icon">
-                                <img src="src/icons/search_green.svg" alt="search-btn">
+                                <img src="../src/icons/search_green.svg" alt="search-btn">
                             </div>
                             <input type="text" name="search" placeholder="Что ищем?..." id="search">
                         </div>
@@ -189,169 +189,615 @@
         </div>
     </header>
 
-    <!-- <section class="main-banner">
-        <div class="container">
 
-            <div class="main-banner__slider slider-banner">
-
-                <div class="slider-banner__wrapper">
-
-                    <div class="slider-banner__slide" style="background-image: url(assets/img/banners/banner1.png)">
-                        <div class="slider-banner__green-title">
-                          <span class="text-extra text-30">  1 440 ₽/пог.м </span>
-                        </div>
-                        <div class="slider-banner__brown-text">
-                          <span class="text-18">Специальные цены на строительный </span>
-                        </div>
-                        <div class="slider-banner__extra-text">
-                            <span class="text-extra">БРУС</span>
-                        </div>
-                    </div>
-
-                </div>
-
+    <section class="bread">
+        <div class="bread__container container">
+            <div class="bread__nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="disable text-13">Главная</a>
+                        </li>
+                        <li>/</li>
+                        <li>
+                            <a href="#" class="text-13">При наведении</a>
+                        </li>
+                        <li>/</li>
+                        <li>
+                            <a href="#" class="text-13">На странице</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
-
-            <div class="main-banner__info">
-                <div class="main-banner__info_title">
-                    Доставка по Москве и Московской области
-                </div>
-                <div class="main-banner__info_btn">
-                    <a href="#">
-                        <img src="src/icons/arrow-right.svg" alt="arrow-right">
-                    </a>
-                </div>
-                <div class="main-benner__info_road">
-                    <img src="assets/img/site/road.svg" alt="road">
-                </div>
-                <div class="main-benner__info_car">
-                    <img src="assets/img/site/car.png" alt="car">
-                </div>
+            <div class="bread__title">
+                <h3 class="text-34 text-bold">Блок-Хаус из сосны (Гост)</h3>
+                <a href="#" class="yellow-btn bread__filter in-bread">
+                    <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.5 0C1.30222 0 1.10888 0.0586491 0.94443 0.16853C0.779981 0.278412 0.651809 0.434591 0.576121 0.617317C0.500433 0.800043 0.48063 1.00111 0.519215 1.19509C0.5578 1.38907 0.653041 1.56725 0.792894 1.70711C0.932746 1.84696 1.11093 1.9422 1.30491 1.98079C1.49889 2.01937 1.69996 1.99957 1.88268 1.92388C2.06541 1.84819 2.22159 1.72002 2.33147 1.55557C2.44135 1.39112 2.5 1.19778 2.5 1C2.5 0.734784 2.39464 0.48043 2.20711 0.292893C2.01957 0.105357 1.76522 0 1.5 0ZM5.5 2H19.5C19.7652 2 20.0196 1.89464 20.2071 1.70711C20.3946 1.51957 20.5 1.26522 20.5 1C20.5 0.734784 20.3946 0.48043 20.2071 0.292893C20.0196 0.105357 19.7652 0 19.5 0H5.5C5.23478 0 4.98043 0.105357 4.79289 0.292893C4.60536 0.48043 4.5 0.734784 4.5 1C4.5 1.26522 4.60536 1.51957 4.79289 1.70711C4.98043 1.89464 5.23478 2 5.5 2ZM5.5 5C5.30222 5 5.10888 5.05865 4.94443 5.16853C4.77998 5.27841 4.65181 5.43459 4.57612 5.61732C4.50043 5.80004 4.48063 6.00111 4.51922 6.19509C4.5578 6.38907 4.65304 6.56725 4.79289 6.70711C4.93275 6.84696 5.11093 6.9422 5.30491 6.98079C5.49889 7.01937 5.69996 6.99957 5.88268 6.92388C6.06541 6.84819 6.22159 6.72002 6.33147 6.55557C6.44135 6.39112 6.5 6.19778 6.5 6C6.5 5.73478 6.39464 5.48043 6.20711 5.29289C6.01957 5.10536 5.76522 5 5.5 5ZM9.5 10C9.30222 10 9.10888 10.0586 8.94443 10.1685C8.77998 10.2784 8.65181 10.4346 8.57612 10.6173C8.50043 10.8 8.48063 11.0011 8.51922 11.1951C8.5578 11.3891 8.65304 11.5673 8.79289 11.7071C8.93275 11.847 9.11093 11.9422 9.30491 11.9808C9.49889 12.0194 9.69996 11.9996 9.88268 11.9239C10.0654 11.8482 10.2216 11.72 10.3315 11.5556C10.4414 11.3911 10.5 11.1978 10.5 11C10.5 10.7348 10.3946 10.4804 10.2071 10.2929C10.0196 10.1054 9.76522 10 9.5 10ZM19.5 5H9.5C9.23478 5 8.98043 5.10536 8.79289 5.29289C8.60536 5.48043 8.5 5.73478 8.5 6C8.5 6.26522 8.60536 6.51957 8.79289 6.70711C8.98043 6.89464 9.23478 7 9.5 7H19.5C19.7652 7 20.0196 6.89464 20.2071 6.70711C20.3946 6.51957 20.5 6.26522 20.5 6C20.5 5.73478 20.3946 5.48043 20.2071 5.29289C20.0196 5.10536 19.7652 5 19.5 5ZM19.5 10H13.5C13.2348 10 12.9804 10.1054 12.7929 10.2929C12.6054 10.4804 12.5 10.7348 12.5 11C12.5 11.2652 12.6054 11.5196 12.7929 11.7071C12.9804 11.8946 13.2348 12 13.5 12H19.5C19.7652 12 20.0196 11.8946 20.2071 11.7071C20.3946 11.5196 20.5 11.2652 20.5 11C20.5 10.7348 20.3946 10.4804 20.2071 10.2929C20.0196 10.1054 19.7652 10 19.5 10Z"
+                            fill="black" />
+                    </svg>
+                    <span class="text-14 text-extra">Фильтр</span>
+                </a>
             </div>
-
         </div>
-    </section> -->
-
-
-    <section class="grid-1 index-margin-top">
-
-        <div class="container grid-1__container">
-
-            <div class="grid-1__card border-top border-left border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/chainsaw.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Собственное производство</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card border-top border-bottom border-right">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/prize.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>15 лет успешной работы</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card border-top border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/woods.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Широкий ассортимент</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card border-left border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/apparat.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Современное оборудование</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card  border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/delivery.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Работаем 24/7 по доставке</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card  border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/pluses.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Доставка через 3 часа, после заказа</span>
-                </div>
-            </div>
-
-        </div>
-
     </section>
 
+
+    <section class="catalog">
+
+        <div class="catalog__container container">
+
+            <aside class="catalog__filter filter">
+                <form action="#">
+                    <div class="filter__one">
+                        <div class="filter__title">
+                            <span class="text-18 text-extra">Фильтры</span>
+                        </div>
+                        <div class="filter__list">
+                            <div class="filter__accordion accordion-two">
+                                <div class="accordion-two__item">
+                                    <div class="accordion-two__header">
+                                        <div class="accordion-two__title">Показать
+                                        </div>
+                                        <div class="accordion-two__icon">
+                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+                                                    fill="#ABABAB" />
+                                            </svg>
+
+                                        </div>
+                                    </div>
+                                    <div class="accordion-two__text" aria-expanded="false">
+                                        <div class="filter__radio">
+                                            <div class="filter__radio">
+                                                <input type="radio" name="count" id="radio1">
+                                                <label for="radio1" class="text-14">Все товары</label>
+                                            </div>
+                                            <div class="filter__radio">
+                                                <input type="radio" name="count" id="radio2">
+                                                <label for="radio2" class="text-14">Только в наличии</label>
+                                            </div>
+                                            <div class="filter__radio">
+                                                <input type="radio" name="count" id="radio3">
+                                                <label for="radio3" class="text-14">Под заказ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-two__item">
+                                    <div class="accordion-two__header">
+                                        <div class="accordion-two__title">Материал
+                                        </div>
+                                        <div class="accordion-two__icon">
+                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+                                                    fill="#ABABAB" />
+                                            </svg>
+
+                                        </div>
+                                    </div>
+                                    <div class="accordion-two__text" aria-expanded="false">
+                                        Цена
+                                    </div>
+                                </div>
+                                <div class="accordion-two__item">
+                                    <div class="accordion-two__header">
+                                        <div class="accordion-two__title">Материал
+                                        </div>
+                                        <div class="accordion-two__icon">
+                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+                                                    fill="#ABABAB" />
+                                            </svg>
+
+                                        </div>
+                                    </div>
+                                    <div class="accordion-two__text" aria-expanded="false">
+                                        <div class="filter__checkboxes">
+                                            <div class="filter__check">
+                                                <input type="checkbox" name="material1" id="material1">
+                                                <label for="material1" class="text-14">Ель</label>
+                                            </div>
+                                            <div class="filter__check">
+                                                <input type="checkbox" name="material2" id="material2">
+                                                <label for="material2" class="text-14">Сосна</label>
+                                            </div>
+                                            <div class="filter__check">
+                                                <input type="checkbox" name="material3" id="material3">
+                                                <label for="material3" class="text-14">Ещё</label>
+                                            </div>
+                                            <div class="filter__check">
+                                                <input type="checkbox" name="material4" id="material4">
+                                                <label for="material4" class="text-14">И ещё</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter__more">
+                                            <a href="#" class="text-13 text-semi">Показать еще 15</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__submit">
+                            <a href="#" class="yellow-btn">Показать</a>
+                            <a href="#" class="more-btn">
+                                <svg width="8" height="8" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.5364 0.263604C1.18492 -0.0878679 0.615076 -0.0878679 0.263604 0.263604C-0.087868 0.615076 -0.087868 1.18492 0.263604 1.5364L4.72721 6L0.263605 10.4636C-0.087867 10.8151 -0.087867 11.3849 0.263605 11.7364C0.615077 12.0879 1.18492 12.0879 1.5364 11.7364L6 7.27279L10.4636 11.7364C10.8151 12.0879 11.3849 12.0879 11.7364 11.7364C12.0879 11.3849 12.0879 10.8151 11.7364 10.4636L7.27279 6L11.7364 1.5364C12.0879 1.18492 12.0879 0.615076 11.7364 0.263604C11.3849 -0.087868 10.8151 -0.087868 10.4636 0.263604L6 4.72721L1.5364 0.263604Z"
+                                        fill="#BDBDBD" />
+                                </svg>
+                                <span class="text-13">Сбросить фильтр</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="filter__two">
+                        <!-- accordion-3 -->
+                    </div>
+                </form>
+            </aside>
+
+            <div class="catalog__body catalog-grid">
+                <div class="catalog-grid__nav">
+                    <a href="#" class="yellow-btn bread__filter catalog-grid__nav_filter">
+                        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.5 0C1.30222 0 1.10888 0.0586491 0.94443 0.16853C0.779981 0.278412 0.651809 0.434591 0.576121 0.617317C0.500433 0.800043 0.48063 1.00111 0.519215 1.19509C0.5578 1.38907 0.653041 1.56725 0.792894 1.70711C0.932746 1.84696 1.11093 1.9422 1.30491 1.98079C1.49889 2.01937 1.69996 1.99957 1.88268 1.92388C2.06541 1.84819 2.22159 1.72002 2.33147 1.55557C2.44135 1.39112 2.5 1.19778 2.5 1C2.5 0.734784 2.39464 0.48043 2.20711 0.292893C2.01957 0.105357 1.76522 0 1.5 0ZM5.5 2H19.5C19.7652 2 20.0196 1.89464 20.2071 1.70711C20.3946 1.51957 20.5 1.26522 20.5 1C20.5 0.734784 20.3946 0.48043 20.2071 0.292893C20.0196 0.105357 19.7652 0 19.5 0H5.5C5.23478 0 4.98043 0.105357 4.79289 0.292893C4.60536 0.48043 4.5 0.734784 4.5 1C4.5 1.26522 4.60536 1.51957 4.79289 1.70711C4.98043 1.89464 5.23478 2 5.5 2ZM5.5 5C5.30222 5 5.10888 5.05865 4.94443 5.16853C4.77998 5.27841 4.65181 5.43459 4.57612 5.61732C4.50043 5.80004 4.48063 6.00111 4.51922 6.19509C4.5578 6.38907 4.65304 6.56725 4.79289 6.70711C4.93275 6.84696 5.11093 6.9422 5.30491 6.98079C5.49889 7.01937 5.69996 6.99957 5.88268 6.92388C6.06541 6.84819 6.22159 6.72002 6.33147 6.55557C6.44135 6.39112 6.5 6.19778 6.5 6C6.5 5.73478 6.39464 5.48043 6.20711 5.29289C6.01957 5.10536 5.76522 5 5.5 5ZM9.5 10C9.30222 10 9.10888 10.0586 8.94443 10.1685C8.77998 10.2784 8.65181 10.4346 8.57612 10.6173C8.50043 10.8 8.48063 11.0011 8.51922 11.1951C8.5578 11.3891 8.65304 11.5673 8.79289 11.7071C8.93275 11.847 9.11093 11.9422 9.30491 11.9808C9.49889 12.0194 9.69996 11.9996 9.88268 11.9239C10.0654 11.8482 10.2216 11.72 10.3315 11.5556C10.4414 11.3911 10.5 11.1978 10.5 11C10.5 10.7348 10.3946 10.4804 10.2071 10.2929C10.0196 10.1054 9.76522 10 9.5 10ZM19.5 5H9.5C9.23478 5 8.98043 5.10536 8.79289 5.29289C8.60536 5.48043 8.5 5.73478 8.5 6C8.5 6.26522 8.60536 6.51957 8.79289 6.70711C8.98043 6.89464 9.23478 7 9.5 7H19.5C19.7652 7 20.0196 6.89464 20.2071 6.70711C20.3946 6.51957 20.5 6.26522 20.5 6C20.5 5.73478 20.3946 5.48043 20.2071 5.29289C20.0196 5.10536 19.7652 5 19.5 5ZM19.5 10H13.5C13.2348 10 12.9804 10.1054 12.7929 10.2929C12.6054 10.4804 12.5 10.7348 12.5 11C12.5 11.2652 12.6054 11.5196 12.7929 11.7071C12.9804 11.8946 13.2348 12 13.5 12H19.5C19.7652 12 20.0196 11.8946 20.2071 11.7071C20.3946 11.5196 20.5 11.2652 20.5 11C20.5 10.7348 20.3946 10.4804 20.2071 10.2929C20.0196 10.1054 19.7652 10 19.5 10Z"
+                                fill="black" />
+                        </svg>
+                        <span class="text-14 text-extra">Фильтр</span>
+                    </a>
+
+                    <form action="" class="catalog-grid__nav_select">
+                        <select name="filter" id="filter">
+                            <option value="popular">По пулярности</option>
+                            <option value="price">По цене</option>
+                        </select>
+                    </form>
+
+                    <nav>
+                        <ul>
+                            <li class="title text-14 text-bold">Сортировка</li>
+                            <li>
+                                <a href="#" class="text-13"> По пулярности
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-13"> По цене
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-13"> По типу дерева
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-13"> Акции
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="catalog-grid__nav-tools">
+                        <a href="#" class="active">
+                            <svg width="24" height="24" viewBox="0 0 22 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 1C6 0.447715 6.44772 0 7 0H21C21.5523 0 22 0.447715 22 1C22 1.55228 21.5523 2 21 2H7C6.44772 2 6 1.55228 6 1Z"
+                                    fill="#ABABAB" />
+                                <path
+                                    d="M6 9C6 8.44772 6.44772 8 7 8H21C21.5523 8 22 8.44772 22 9C22 9.55228 21.5523 10 21 10H7C6.44772 10 6 9.55228 6 9Z"
+                                    fill="#ABABAB" />
+                                <path
+                                    d="M6 17C6 16.4477 6.44772 16 7 16H21C21.5523 16 22 16.4477 22 17C22 17.5523 21.5523 18 21 18H7C6.44772 18 6 17.5523 6 17Z"
+                                    fill="#ABABAB" />
+                                <path
+                                    d="M0 1C0 0.447715 0.447715 0 1 0H3C3.55228 0 4 0.447715 4 1C4 1.55228 3.55228 2 3 2H1C0.447715 2 0 1.55228 0 1Z"
+                                    fill="#ABABAB" />
+                                <path
+                                    d="M0 9C0 8.44772 0.447715 8 1 8H3C3.55228 8 4 8.44772 4 9C4 9.55228 3.55228 10 3 10H1C0.447715 10 0 9.55228 0 9Z"
+                                    fill="#ABABAB" />
+                                <path
+                                    d="M0 17C0 16.4477 0.447715 16 1 16H3C3.55228 16 4 16.4477 4 17C4 17.5523 3.55228 18 3 18H1C0.447715 18 0 17.5523 0 17Z"
+                                    fill="#ABABAB" />
+                            </svg>
+                        </a>
+                        <a href="#"><svg width="24" height="24" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 2V7H7V2H2ZM9 19V12C9 11.4477 8.55228 11 8 11H1C0.447715 11 0 11.4477 0 12V19C0 19.5523 0.447716 20 1 20H8C8.55228 20 9 19.5523 9 19ZM9 8V1C9 0.447715 8.55228 0 8 0H1C0.447715 0 0 0.447716 0 1V8C0 8.55228 0.447716 9 1 9H8C8.55228 9 9 8.55228 9 8ZM13 2V7H18V2H13ZM2 13V18H7V13H2ZM13 13V18H18V13H13ZM12 0C11.4477 0 11 0.447716 11 1V8C11 8.55228 11.4477 9 12 9H19C19.5523 9 20 8.55228 20 8V1C20 0.447715 19.5523 0 19 0H12ZM12 11C11.4477 11 11 11.4477 11 12V19C11 19.5523 11.4477 20 12 20H19C19.5523 20 20 19.5523 20 19V12C20 11.4477 19.5523 11 19 11H12Z"
+                                    fill="#ABABAB" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog-grid__wrapper">
+                    <div class="product-cart">
+
+                        <div class="product-cart__picture">
+                            <img src="../assets/img/site/product.png" alt="product-picture">
+                            <div class="product-cart__supplement-2">
+                                <span class="text-11 text-extra">Акция</span>
+                            </div>
+                        </div>
+                        <div class="product-cart__title">
+                            <h4 class="text-16 text-bold">Клееный брус категория А 80х80х2000</h4>
+                        </div>
+                        <div class="product-cart__supplement">
+                            <span class="text-14">Сосна/Ель</span>
+                        </div>
+                        <div class="product-cart__price">
+                            <span class="product-cart__price_actual text-20 text-bold">
+                                1 440 ₽/пог.м
+                            </span>
+                            <span class="product-cart__price_old text-14 text-medium">2 190 ₽ </span>
+                        </div>
+                        <div class="product-cart__counter">
+                            <div class="product-cart__counter_switcher">
+                                <svg width="14" height="2" viewBox="0 0 14 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1C0 0.447715 0.447715 0 1 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H1C0.447716 2 0 1.55228 0 1Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                            <div class="product-cart__counter_input">
+                                <input type="number" value="1" name="count" id="product-1" class="text-15 text-medium">
+                            </div>
+                            <div class="product-cart__counter_switcher">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 6C0 5.44772 0.447715 5 1 5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H1C0.447715 7 0 6.55228 0 6Z"
+                                        fill="#ABABAB" />
+                                    <path
+                                        d="M6 0C6.55228 2.41411e-08 7 0.447715 7 1L7 11C7 11.5523 6.55228 12 6 12C5.44771 12 5 11.5523 5 11L5 1C5 0.447715 5.44772 -2.41411e-08 6 0Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-cart__buttons">
+                            <a href="#" class="yellow-btn text-14 text-bold">
+                                Оформить заказ
+                            </a>
+                            <a href="#" class="green-btn text-14 text-bold">
+                                Заказать звонок
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="product-cart">
+
+                        <div class="product-cart__picture">
+                            <img src="../assets/img/site/product.png" alt="product-picture">
+                            <div class="product-cart__supplement-2">
+                                <span class="text-11 text-extra">Акция</span>
+                            </div>
+                        </div>
+                        <div class="product-cart__title">
+                            <h4 class="text-16 text-bold">Клееный брус категория А 80х80х2000</h4>
+                        </div>
+                        <div class="product-cart__supplement">
+                            <span class="text-14">Сосна/Ель</span>
+                        </div>
+                        <div class="product-cart__price">
+                            <span class="product-cart__price_actual text-20 text-bold">
+                                1 440 ₽/пог.м
+                            </span>
+                            <span class="product-cart__price_old text-14 text-medium">2 190 ₽ </span>
+                        </div>
+                        <div class="product-cart__counter">
+                            <div class="product-cart__counter_switcher">
+                                <svg width="14" height="2" viewBox="0 0 14 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1C0 0.447715 0.447715 0 1 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H1C0.447716 2 0 1.55228 0 1Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                            <div class="product-cart__counter_input">
+                                <input type="number" value="1" name="count" id="product-1" class="text-15 text-medium">
+                            </div>
+                            <div class="product-cart__counter_switcher">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 6C0 5.44772 0.447715 5 1 5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H1C0.447715 7 0 6.55228 0 6Z"
+                                        fill="#ABABAB" />
+                                    <path
+                                        d="M6 0C6.55228 2.41411e-08 7 0.447715 7 1L7 11C7 11.5523 6.55228 12 6 12C5.44771 12 5 11.5523 5 11L5 1C5 0.447715 5.44772 -2.41411e-08 6 0Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-cart__buttons">
+                            <a href="#" class="yellow-btn text-14 text-bold">
+                                Оформить заказ
+                            </a>
+                            <a href="#" class="green-btn text-14 text-bold">
+                                Заказать звонок
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="product-cart">
+
+                        <div class="product-cart__picture">
+                            <img src="../assets/img/site/product.png" alt="product-picture">
+                            <div class="product-cart__supplement-2">
+                                <span class="text-11 text-extra">Акция</span>
+                            </div>
+                        </div>
+                        <div class="product-cart__title">
+                            <h4 class="text-16 text-bold">Клееный брус категория А 80х80х2000</h4>
+                        </div>
+                        <div class="product-cart__supplement">
+                            <span class="text-14">Сосна/Ель</span>
+                        </div>
+                        <div class="product-cart__price">
+                            <span class="product-cart__price_actual text-20 text-bold">
+                                1 440 ₽/пог.м
+                            </span>
+                            <span class="product-cart__price_old text-14 text-medium">2 190 ₽ </span>
+                        </div>
+                        <div class="product-cart__counter">
+                            <div class="product-cart__counter_switcher">
+                                <svg width="14" height="2" viewBox="0 0 14 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1C0 0.447715 0.447715 0 1 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H1C0.447716 2 0 1.55228 0 1Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                            <div class="product-cart__counter_input">
+                                <input type="number" value="1" name="count" id="product-1" class="text-15 text-medium">
+                            </div>
+                            <div class="product-cart__counter_switcher">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 6C0 5.44772 0.447715 5 1 5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H1C0.447715 7 0 6.55228 0 6Z"
+                                        fill="#ABABAB" />
+                                    <path
+                                        d="M6 0C6.55228 2.41411e-08 7 0.447715 7 1L7 11C7 11.5523 6.55228 12 6 12C5.44771 12 5 11.5523 5 11L5 1C5 0.447715 5.44772 -2.41411e-08 6 0Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-cart__buttons">
+                            <a href="#" class="yellow-btn text-14 text-bold">
+                                Оформить заказ
+                            </a>
+                            <a href="#" class="green-btn text-14 text-bold">
+                                Заказать звонок
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="product-cart">
+
+                        <div class="product-cart__picture">
+                            <img src="../assets/img/site/product.png" alt="product-picture">
+                            <div class="product-cart__supplement-2">
+                                <span class="text-11 text-extra">Акция</span>
+                            </div>
+                        </div>
+                        <div class="product-cart__title">
+                            <h4 class="text-16 text-bold">Клееный брус категория А 80х80х2000</h4>
+                        </div>
+                        <div class="product-cart__supplement">
+                            <span class="text-14">Сосна/Ель</span>
+                        </div>
+                        <div class="product-cart__price">
+                            <span class="product-cart__price_actual text-20 text-bold">
+                                1 440 ₽/пог.м
+                            </span>
+                            <span class="product-cart__price_old text-14 text-medium">2 190 ₽ </span>
+                        </div>
+                        <div class="product-cart__counter">
+                            <div class="product-cart__counter_switcher">
+                                <svg width="14" height="2" viewBox="0 0 14 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1C0 0.447715 0.447715 0 1 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H1C0.447716 2 0 1.55228 0 1Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                            <div class="product-cart__counter_input">
+                                <input type="number" value="1" name="count" id="product-1" class="text-15 text-medium">
+                            </div>
+                            <div class="product-cart__counter_switcher">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 6C0 5.44772 0.447715 5 1 5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H1C0.447715 7 0 6.55228 0 6Z"
+                                        fill="#ABABAB" />
+                                    <path
+                                        d="M6 0C6.55228 2.41411e-08 7 0.447715 7 1L7 11C7 11.5523 6.55228 12 6 12C5.44771 12 5 11.5523 5 11L5 1C5 0.447715 5.44772 -2.41411e-08 6 0Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-cart__buttons">
+                            <a href="#" class="yellow-btn text-14 text-bold">
+                                Оформить заказ
+                            </a>
+                            <a href="#" class="green-btn text-14 text-bold">
+                                Заказать звонок
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="product-cart">
+
+                        <div class="product-cart__picture">
+                            <img src="../assets/img/site/product.png" alt="product-picture">
+                            <div class="product-cart__supplement-2">
+                                <span class="text-11 text-extra">Акция</span>
+                            </div>
+                        </div>
+                        <div class="product-cart__title">
+                            <h4 class="text-16 text-bold">Клееный брус категория А 80х80х2000</h4>
+                        </div>
+                        <div class="product-cart__supplement">
+                            <span class="text-14">Сосна/Ель</span>
+                        </div>
+                        <div class="product-cart__price">
+                            <span class="product-cart__price_actual text-20 text-bold">
+                                1 440 ₽/пог.м
+                            </span>
+                            <span class="product-cart__price_old text-14 text-medium">2 190 ₽ </span>
+                        </div>
+                        <div class="product-cart__counter">
+                            <div class="product-cart__counter_switcher">
+                                <svg width="14" height="2" viewBox="0 0 14 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1C0 0.447715 0.447715 0 1 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H1C0.447716 2 0 1.55228 0 1Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                            <div class="product-cart__counter_input">
+                                <input type="number" value="1" name="count" id="product-1" class="text-15 text-medium">
+                            </div>
+                            <div class="product-cart__counter_switcher">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 6C0 5.44772 0.447715 5 1 5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H1C0.447715 7 0 6.55228 0 6Z"
+                                        fill="#ABABAB" />
+                                    <path
+                                        d="M6 0C6.55228 2.41411e-08 7 0.447715 7 1L7 11C7 11.5523 6.55228 12 6 12C5.44771 12 5 11.5523 5 11L5 1C5 0.447715 5.44772 -2.41411e-08 6 0Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-cart__buttons">
+                            <a href="#" class="yellow-btn text-14 text-bold">
+                                Оформить заказ
+                            </a>
+                            <a href="#" class="green-btn text-14 text-bold">
+                                Заказать звонок
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="catalog-grid__pages">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_prev">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.19564 9.70071C8.58263 10.0947 9.21577 10.1004 9.6098 9.71345L13.7007 5.71345C13.8922 5.52542 14 5.26834 14 5C14 4.73166 13.8922 4.47458 13.7007 4.28655L9.6098 0.28655C9.21577 -0.100441 8.58263 -0.0947366 8.19564 0.29929C7.80865 0.693317 7.81435 1.32646 8.20838 1.71345L10.5547 4L0.999999 4C0.447714 4 -9.70792e-07 4.44771 -8.74228e-07 5C-7.77663e-07 5.55228 0.447715 6 0.999999 6L10.5547 6L8.20838 8.28655C7.81435 8.67354 7.80865 9.30668 8.19564 9.70071Z"
+                                            fill="#121211" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_page-number">
+                                    1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_page-number">
+                                    2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_page-number">
+                                    3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_page-number">
+                                    4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_page-number">
+                                    5
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_page-number">
+                                    ...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_page-number">
+                                    24
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_page-number">
+                                    26
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="catalog-grid__pages_next">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.19564 9.70071C8.58263 10.0947 9.21577 10.1004 9.6098 9.71345L13.7007 5.71345C13.8922 5.52542 14 5.26834 14 5C14 4.73166 13.8922 4.47458 13.7007 4.28655L9.6098 0.28655C9.21577 -0.100441 8.58263 -0.0947366 8.19564 0.29929C7.80865 0.693317 7.81435 1.32646 8.20838 1.71345L10.5547 4L0.999999 4C0.447714 4 -9.70792e-07 4.44771 -8.74228e-07 5C-7.77663e-07 5.55228 0.447715 6 0.999999 6L10.5547 6L8.20838 8.28655C7.81435 8.67354 7.80865 9.30668 8.19564 9.70071Z"
+                                            fill="#121211" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
 
     <section class="info bg-grey">
         <div class="container info__container">
             <div class="info__title">
-                <h3 class="text-34 text-bold">Пиломатериалы от производителя</h3>
+                <h3 class="text-34 text-bold">Блок-хаус купить в Москве</h3>
             </div>
             <div class="info__text-1">
-                <span class="text-16 text-grey">Купить пиломатериалы от производителя в Москве предлагает наша компания.
-                    Мы предоставляем каждому
-                    клиенту выгодные цены за куб, оперативную доставку по Москве и области и индивидуальный
-                    подход.</span>
-            </div>
-
-            <div class="info__text-2 mb-70">
-                <div class="info__text-2_pic first-pic">
-                    <img src="assets/img/site/assortiment.png" alt="assortiment">
-                </div>
-                <div class="info__text-2_text">
-                    <div class="text-24 text-bold">Ассортимент</div>
-                    <div class="text-16 text-grey">ЛесПро реализует собственные строительные материалы, которые
-                        отличаются повышенными показателями качества. На каждое представленное наименование в каталоге,
-                        имеется сертификация. В нашем каталоге представлен широкий ассортимент, более 500 наименований
-                        разного назначения, среди которого каждый сможет подобрать оптимальный вариант для решения своих
-                        задач.</div>
-                </div>
+                <span class="text-16 text-grey">Блок-хаус купить в Москве можно в нашей компании. Мы предоставляем
+                    материалы оптом и в розницу с доставкой по городу и Московской области по низким ценам за м2</span>
             </div>
 
             <div class="info__list">
                 <div class="info__list_title text-24 text-bold">
-                    Вопрос освещения занимает важное место
+                    Какой-то заголовок
                 </div>
                 <div class="info__list_text">
-                    <span class="text-16 text-grey">ЛесПро предоставляет пиломатериал собственного производства более 15
-                        лет. Мы готовы обеспечить каждому клиенту:</span>
+                    <span class="text-16 text-grey">Одним из востребованных материалов для внешней и внутренней отделки
+                        является блок-хаус. С виду напоминает вагонку, у которой увеличили профиль. Особенности
+                        материала:</span>
                 </div>
                 <div class="info__list_body">
                     <ul>
-                        <li class="text-15">Индивидуальный подход. Предоставляем товары оптом и в розницу, систему
-                            скидок;</li>
-                        <li class="text-15">Оперативную доставку. Собственный автопарк позволяет нам осуществлять
-                            доставку в круглосуточном режиме по Москве и области;</li>
-                        <li class="text-15">Низкие цены на весь ассортимент;</li>
-                        <li class="text-15">Консультирование и помощь в выборе.</li>
+                        <li class="text-15">крепление в паз обеспечивает плотную стыковку;</li>
+                        <li class="text-15">имитирует поверхность настоящего бревна;</li>
+                        <li class="text-15">экологически чистый материал;</li>
+                        <li class="text-15">эстетичный внешний вид;</li>
+                        <li class="text-15">простота монтажа;</li>
+                        <li class="text-15">длительный срок эксплуатации.</li>
                     </ul>
                 </div>
             </div>
             <div class="info__text-2">
-                <div class="info__text-2_pic">
-                    <img src="assets/img/site/assortiment-2.png" alt="assortiment">
-                </div>
                 <div class="info__text-2_text">
-                    <div class="text-16 text-grey">Для качественного строительства и решения других задач, нужно высокое
-                        качество используемого материала. Обращайтесь к профессионалам, будьте уверены в покупаемой
-                        продукции! Более 100 клиентов остались довольны нашим сотрудничеством. Звоните прямо сейчас или
-                        оставляйте заявку на нашем сайте. Наши консультанты помогут вам в выборе, расчете объемов и
-                        предоставления цен. Мы сотрудничаем с юридическими и физическими лицами.</div>
+                    <div class="text-16 text-grey">Для производства блок-хауса наша компания использует только здоровый
+                        живой лес. Данный фактор позволяет предоставлять максимально прочное изделие, способное
+                        прослужить долгие годы без потери качества.</div>
                 </div>
             </div>
         </div>
@@ -440,7 +886,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -497,7 +943,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -554,7 +1000,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -611,7 +1057,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -668,7 +1114,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -725,7 +1171,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -807,137 +1253,8 @@
     </section>
 
 
-    <section class="faq bg-grey">
-        <div class="container faq__container">
-            <div class="faq__title">
-                <h3 class="text-34 text-bold">Часто задаваемые вопросы</h3>
-            </div>
 
-            <div class="faq__accordion-wrapper">
-                <div class="faq__accordion accordion-one">
-                    <div class="accordion-one__item">
-                        <div class="accordion-one__header">
-                            <div class="accordion-one__title">Вопрос освещения занимает важное место
-                            </div>
-                            <div class="accordion-one__icon">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                                        fill="#ABABAB" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="accordion-one__text" aria-expanded="false">
-                            Каркас лестницы лучше устанавливать на этапе черновой отделки и чем раньше, тем лучше.
-                            Так
-                            как при монтаже каркас лестницы крепиться и к полу, и к стенам, то при отделке все
-                            элементы
-                            крепежа скроются под штукатуркой или стяжкой, а сама стяжка придаст больше жесткости
-                            лестнице. А вот обшивать лестницу лучше на самом последнем этапе, когда вы уже готовы
-                            въехать в дом. Поэтому о лестнице нужно думать уже на этапе проектирования дома, уделив
-                            ей
-                            особое внимание.
-                        </div>
-
-
-                    </div>
-                    <div class="accordion-one__item">
-                        <div class="accordion-one__header">
-                            <div class="accordion-one__title">Когда лучше всего заказать лестницу при
-                                строительстве?
-                            </div>
-                            <div class="accordion-one__icon">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                                        fill="#ABABAB" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="accordion-one__text" aria-expanded="false">
-                            Каркас лестницы лучше устанавливать на этапе черновой отделки и чем раньше, тем лучше.
-                            Так
-                            как при монтаже каркас лестницы крепиться и к полу, и к стенам, то при отделке все
-                            элементы
-                            крепежа скроются под штукатуркой или стяжкой, а сама стяжка придаст больше жесткости
-                            лестнице. А вот обшивать лестницу лучше на самом последнем этапе, когда вы уже готовы
-                            въехать в дом. Поэтому о лестнице нужно думать уже на этапе проектирования дома, уделив
-                            ей
-                            особое внимание.
-                        </div>
-
-
-                    </div>
-                    <div class="accordion-one__item">
-                        <div class="accordion-one__header">
-                            <div class="accordion-one__title">Вопрос освещения занимает важное место
-                            </div>
-                            <div class="accordion-one__icon">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                                        fill="#ABABAB" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="accordion-one__text" aria-expanded="false">
-                            Каркас лестницы лучше устанавливать на этапе черновой отделки и чем раньше, тем лучше.
-                            Так
-                            как при монтаже каркас лестницы крепиться и к полу, и к стенам, то при отделке все
-                            элементы
-                            крепежа скроются под штукатуркой или стяжкой, а сама стяжка придаст больше жесткости
-                            лестнице. А вот обшивать лестницу лучше на самом последнем этапе, когда вы уже готовы
-                            въехать в дом. Поэтому о лестнице нужно думать уже на этапе проектирования дома, уделив
-                            ей
-                            особое внимание.
-                        </div>
-
-
-                    </div>
-                    <div class="accordion-one__item">
-                        <div class="accordion-one__header">
-                            <div class="accordion-one__title">Когда лучше всего заказать лестницу при
-                                строительстве?
-                            </div>
-                            <div class="accordion-one__icon">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                                        fill="#ABABAB" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="accordion-one__text" aria-expanded="false">
-                            Каркас лестницы лучше устанавливать на этапе черновой отделки и чем раньше, тем лучше.
-                            Так
-                            как при монтаже каркас лестницы крепиться и к полу, и к стенам, то при отделке все
-                            элементы
-                            крепежа скроются под штукатуркой или стяжкой, а сама стяжка придаст больше жесткости
-                            лестнице. А вот обшивать лестницу лучше на самом последнем этапе, когда вы уже готовы
-                            въехать в дом. Поэтому о лестнице нужно думать уже на этапе проектирования дома, уделив
-                            ей
-                            особое внимание.
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="callback bg-green-1">
+    <section class="callback bg-green-1 mt-140">
         <div class="callback__pattern" style="background-image: url('assets/img/site/pattern_2.png');">
             <div class="callback__container container">
                 <div class="callback__head">
@@ -960,7 +1277,7 @@
                     </form>
                 </div>
                 <div class="callback__picture">
-                    <img src="assets/img/site/man.png" alt="man">
+                    <img src="../assets/img/site/man.png" alt="man">
                 </div>
             </div>
         </div>
@@ -978,7 +1295,7 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <img src="assets/img/site/logo.png" alt="logo">
+                                        <img src="../assets/img/site/logo.png" alt="logo">
                                     </a>
                                 </li>
                                 <li>
@@ -1095,18 +1412,18 @@
 
                                 <li class="footer__navigation_social">
                                     <a href="#" class="instagram">
-                                        <img src="src/icons/instagram.svg" alt="social">
+                                        <img src="../src/icons/instagram.svg" alt="social">
                                     </a>
                                     <a href="#" class="whatsapp">
-                                        <img src="src/icons/whatsapp.svg" alt="social">
+                                        <img src="../src/icons/whatsapp.svg" alt="social">
                                     </a>
 
                                     <a href="#" class="telegram">
-                                        <img src="src/icons/telegram.svg" alt="social">
+                                        <img src="../src/icons/telegram.svg" alt="social">
                                     </a>
 
                                     <a href="#" class="viber">
-                                        <img src="src/icons/viber.svg" alt="social">
+                                        <img src="../src/icons/viber.svg" alt="social">
                                     </a>
                                 </li>
 
@@ -1155,18 +1472,18 @@
 
                     <li class="footer__navigation_social">
                         <a href="#" class="instagram">
-                            <img src="src/icons/instagram.svg" alt="social">
+                            <img src="../src/icons/instagram.svg" alt="social">
                         </a>
                         <a href="#" class="whatsapp">
-                            <img src="src/icons/whatsapp.svg" alt="social">
+                            <img src="../src/icons/whatsapp.svg" alt="social">
                         </a>
 
                         <a href="#" class="telegram">
-                            <img src="src/icons/telegram.svg" alt="social">
+                            <img src="../src/icons/telegram.svg" alt="social">
                         </a>
 
                         <a href="#" class="viber">
-                            <img src="src/icons/viber.svg" alt="social">
+                            <img src="../src/icons/viber.svg" alt="social">
                         </a>
                     </li>
                 </ul>
@@ -1185,27 +1502,27 @@
 
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/mir.svg" alt="pay-icon">
+                                    <img src="../src/icons/mir.svg" alt="pay-icon">
                                 </a>
                             </div>
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/paypal.svg" alt="pay-icon">
+                                    <img src="../src/icons/paypal.svg" alt="pay-icon">
                                 </a>
                             </div>
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/visa.svg" alt="pay-icon">
+                                    <img src="../src/icons/visa.svg" alt="pay-icon">
                                 </a>
                             </div>
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/mastercard.svg" alt="pay-icon">
+                                    <img src="../src/icons/mastercard.svg" alt="pay-icon">
                                 </a>
                             </div>
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/qiwi.svg" alt="pay-icon">
+                                    <img src="../src/icons/qiwi.svg" alt="pay-icon">
                                 </a>
                             </div>
                         </div>
@@ -1257,8 +1574,8 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="src/js/script.js"></script>
-    <script type="text/javascript" src="src/js/slick/slick.min.js"></script>
+    <script src="../src/js/script.js"></script>
+    <script type="text/javascript" src="../src/js/slick/slick.min.js"></script>
 
 
     <script>

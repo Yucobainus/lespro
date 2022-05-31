@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" type="text/css" href="src/css/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/slick/slick-theme.css" />
-    <title>Главная</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/slick/slick-theme.css" />
+    <title>Страница товара</title>
 </head>
 
 <body>
@@ -79,7 +79,7 @@
                     <div class="header__content">
                         <div class="header__content_logo">
                             <div class="header__content_logo-wrapper">
-                                <img src="assets/img/site/logo.png" alt="logo">
+                                <img src="../assets/img/site/logo.png" alt="logo">
                             </div>
                         </div>
 
@@ -168,7 +168,7 @@
                         </nav>
                         <div class="header__navigation_search">
                             <div class="header__navigation_nav-icon">
-                                <img src="src/icons/search_green.svg" alt="search-btn">
+                                <img src="../src/icons/search_green.svg" alt="search-btn">
                             </div>
                             <input type="text" name="search" placeholder="Что ищем?..." id="search">
                         </div>
@@ -189,182 +189,49 @@
         </div>
     </header>
 
-    <!-- <section class="main-banner">
-        <div class="container">
 
-            <div class="main-banner__slider slider-banner">
-
-                <div class="slider-banner__wrapper">
-
-                    <div class="slider-banner__slide" style="background-image: url(assets/img/banners/banner1.png)">
-                        <div class="slider-banner__green-title">
-                          <span class="text-extra text-30">  1 440 ₽/пог.м </span>
-                        </div>
-                        <div class="slider-banner__brown-text">
-                          <span class="text-18">Специальные цены на строительный </span>
-                        </div>
-                        <div class="slider-banner__extra-text">
-                            <span class="text-extra">БРУС</span>
-                        </div>
-                    </div>
-
-                </div>
-
+    <section class="bread">
+        <div class="bread__container container">
+            <div class="bread__nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="disable text-13">Главная</a>
+                        </li>
+                        <li>/</li>
+                        <li>
+                            <a href="#" class="text-13">При наведении</a>
+                        </li>
+                        <li>/</li>
+                        <li>
+                            <a href="#" class="text-13">На странице</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
-
-            <div class="main-banner__info">
-                <div class="main-banner__info_title">
-                    Доставка по Москве и Московской области
-                </div>
-                <div class="main-banner__info_btn">
-                    <a href="#">
-                        <img src="src/icons/arrow-right.svg" alt="arrow-right">
-                    </a>
-                </div>
-                <div class="main-benner__info_road">
-                    <img src="assets/img/site/road.svg" alt="road">
-                </div>
-                <div class="main-benner__info_car">
-                    <img src="assets/img/site/car.png" alt="car">
-                </div>
-            </div>
-
         </div>
-    </section> -->
-
-
-    <section class="grid-1 index-margin-top">
-
-        <div class="container grid-1__container">
-
-            <div class="grid-1__card border-top border-left border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/chainsaw.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Собственное производство</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card border-top border-bottom border-right">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/prize.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>15 лет успешной работы</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card border-top border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/woods.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Широкий ассортимент</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card border-left border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/apparat.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Современное оборудование</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card  border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/delivery.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Работаем 24/7 по доставке</span>
-                </div>
-            </div>
-
-            <div class="grid-1__card  border-right border-bottom">
-                <div class="grid-1__card_icon">
-                    <img src="assets/colored-icons/pluses.svg" alt="grid-icon">
-                </div>
-                <div class="grid-1__card_title text-15">
-                    <span>Доставка через 3 часа, после заказа</span>
-                </div>
-            </div>
-
-        </div>
-
     </section>
 
-
-    <section class="info bg-grey">
-        <div class="container info__container">
+    <section class="info mt-50">
+        <div class="info__container container">
             <div class="info__title">
-                <h3 class="text-34 text-bold">Пиломатериалы от производителя</h3>
+                <h4 class="text-34 text-bold">Способы оплаты</h4>
             </div>
             <div class="info__text-1">
-                <span class="text-16 text-grey">Купить пиломатериалы от производителя в Москве предлагает наша компания.
-                    Мы предоставляем каждому
-                    клиенту выгодные цены за куб, оперативную доставку по Москве и области и индивидуальный
-                    подход.</span>
-            </div>
-
-            <div class="info__text-2 mb-70">
-                <div class="info__text-2_pic first-pic">
-                    <img src="assets/img/site/assortiment.png" alt="assortiment">
-                </div>
-                <div class="info__text-2_text">
-                    <div class="text-24 text-bold">Ассортимент</div>
-                    <div class="text-16 text-grey">ЛесПро реализует собственные строительные материалы, которые
-                        отличаются повышенными показателями качества. На каждое представленное наименование в каталоге,
-                        имеется сертификация. В нашем каталоге представлен широкий ассортимент, более 500 наименований
-                        разного назначения, среди которого каждый сможет подобрать оптимальный вариант для решения своих
-                        задач.</div>
-                </div>
-            </div>
-
-            <div class="info__list">
-                <div class="info__list_title text-24 text-bold">
-                    Вопрос освещения занимает важное место
-                </div>
-                <div class="info__list_text">
-                    <span class="text-16 text-grey">ЛесПро предоставляет пиломатериал собственного производства более 15
-                        лет. Мы готовы обеспечить каждому клиенту:</span>
-                </div>
-                <div class="info__list_body">
-                    <ul>
-                        <li class="text-15">Индивидуальный подход. Предоставляем товары оптом и в розницу, систему
-                            скидок;</li>
-                        <li class="text-15">Оперативную доставку. Собственный автопарк позволяет нам осуществлять
-                            доставку в круглосуточном режиме по Москве и области;</li>
-                        <li class="text-15">Низкие цены на весь ассортимент;</li>
-                        <li class="text-15">Консультирование и помощь в выборе.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="info__text-2">
-                <div class="info__text-2_pic">
-                    <img src="assets/img/site/assortiment-2.png" alt="assortiment">
-                </div>
-                <div class="info__text-2_text">
-                    <div class="text-16 text-grey">Для качественного строительства и решения других задач, нужно высокое
-                        качество используемого материала. Обращайтесь к профессионалам, будьте уверены в покупаемой
-                        продукции! Более 100 клиентов остались довольны нашим сотрудничеством. Звоните прямо сейчас или
-                        оставляйте заявку на нашем сайте. Наши консультанты помогут вам в выборе, расчете объемов и
-                        предоставления цен. Мы сотрудничаем с юридическими и физическими лицами.</div>
-                </div>
+                <span class="text-16 text-grey">Мы предлагаем большой выбор способов оплаты покупки в Интернет-магазине
+                    Евровагонка.ру. Выбирать наиболее удобный для Вас способ необходимо при оформлении заказа и
+                    согласовании условий доставки товара.</span>
             </div>
         </div>
     </section>
 
-
-    <section class="slider-1 mt-70">
+    <section class="slider-1 p-70-140 bg-grey mt-70">
 
         <div class="slider-1__container container">
 
             <div class="slider-1__toolbar mb-44">
                 <div class="slider-1__toolbar_title">
-                    <h3 class="text-34 text-bold">Акции и предложения</h3>
+                    <h3 class="text-34 text-bold">Ранее смотрели</h3>
                 </div>
                 <div class="slider-1__toolbar_more">
                     <a href="#" class="text-14 text-bold">
@@ -395,35 +262,6 @@
             </div>
 
 
-            <div class="slider-1__navigation">
-                <nav>
-                    <ul>
-                        <li class="active text-14 text-bold">Все</li>
-                        <li class="text-14 text-bold">Новинки</li>
-                        <li class="text-14 text-bold">Хиты продаж</li>
-                        <li class="text-14 text-bold">Акции и скидки</li>
-                    </ul>
-                </nav>
-                <div class="slider-1__navigation_switchers toolbar-switchers">
-                    <div class="slider-1__navigation_switcher-prev" id="slider-one-arrow-prev-small">
-                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.19564 9.70071C8.58263 10.0947 9.21577 10.1004 9.6098 9.71345L13.7007 5.71345C13.8922 5.52542 14 5.26834 14 5C14 4.73166 13.8922 4.47458 13.7007 4.28655L9.6098 0.28655C9.21577 -0.100441 8.58263 -0.0947366 8.19564 0.29929C7.80865 0.693317 7.81435 1.32646 8.20838 1.71345L10.5547 4L0.999999 4C0.447714 4 -9.70792e-07 4.44771 -8.74228e-07 5C-7.77663e-07 5.55228 0.447715 6 0.999999 6L10.5547 6L8.20838 8.28655C7.81435 8.67354 7.80865 9.30668 8.19564 9.70071Z"
-                                fill="#1B1B1B" />
-                        </svg>
-                    </div>
-                    <div class="slider-1__navigation_switcher-next" id="slider-one-arrow-next-small">
-                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.19564 9.70071C8.58263 10.0947 9.21577 10.1004 9.6098 9.71345L13.7007 5.71345C13.8922 5.52542 14 5.26834 14 5C14 4.73166 13.8922 4.47458 13.7007 4.28655L9.6098 0.28655C9.21577 -0.100441 8.58263 -0.0947366 8.19564 0.29929C7.80865 0.693317 7.81435 1.32646 8.20838 1.71345L10.5547 4L0.999999 4C0.447714 4 -9.70792e-07 4.44771 -8.74228e-07 5C-7.77663e-07 5.55228 0.447715 6 0.999999 6L10.5547 6L8.20838 8.28655C7.81435 8.67354 7.80865 9.30668 8.19564 9.70071Z"
-                                fill="#1B1B1B" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-
-
             <div class="slider-1__wrapper">
 
                 <div class="slider-1__arr-prev arr-rotate" id="slider-one-arrow-prev-desktop">
@@ -440,7 +278,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -497,7 +335,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -554,7 +392,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -611,7 +449,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -668,7 +506,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -725,7 +563,7 @@
                         <div class="product-cart w-100">
 
                             <div class="product-cart__picture">
-                                <img src="assets/img/site/product.png" alt="product-picture">
+                                <img src="../assets/img/site/product.png" alt="product-picture">
                                 <div class="product-cart__supplement-2">
                                     <span class="text-11 text-extra">Акция</span>
                                 </div>
@@ -807,137 +645,8 @@
     </section>
 
 
-    <section class="faq bg-grey">
-        <div class="container faq__container">
-            <div class="faq__title">
-                <h3 class="text-34 text-bold">Часто задаваемые вопросы</h3>
-            </div>
 
-            <div class="faq__accordion-wrapper">
-                <div class="faq__accordion accordion-one">
-                    <div class="accordion-one__item">
-                        <div class="accordion-one__header">
-                            <div class="accordion-one__title">Вопрос освещения занимает важное место
-                            </div>
-                            <div class="accordion-one__icon">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                                        fill="#ABABAB" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="accordion-one__text" aria-expanded="false">
-                            Каркас лестницы лучше устанавливать на этапе черновой отделки и чем раньше, тем лучше.
-                            Так
-                            как при монтаже каркас лестницы крепиться и к полу, и к стенам, то при отделке все
-                            элементы
-                            крепежа скроются под штукатуркой или стяжкой, а сама стяжка придаст больше жесткости
-                            лестнице. А вот обшивать лестницу лучше на самом последнем этапе, когда вы уже готовы
-                            въехать в дом. Поэтому о лестнице нужно думать уже на этапе проектирования дома, уделив
-                            ей
-                            особое внимание.
-                        </div>
-
-
-                    </div>
-                    <div class="accordion-one__item">
-                        <div class="accordion-one__header">
-                            <div class="accordion-one__title">Когда лучше всего заказать лестницу при
-                                строительстве?
-                            </div>
-                            <div class="accordion-one__icon">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                                        fill="#ABABAB" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="accordion-one__text" aria-expanded="false">
-                            Каркас лестницы лучше устанавливать на этапе черновой отделки и чем раньше, тем лучше.
-                            Так
-                            как при монтаже каркас лестницы крепиться и к полу, и к стенам, то при отделке все
-                            элементы
-                            крепежа скроются под штукатуркой или стяжкой, а сама стяжка придаст больше жесткости
-                            лестнице. А вот обшивать лестницу лучше на самом последнем этапе, когда вы уже готовы
-                            въехать в дом. Поэтому о лестнице нужно думать уже на этапе проектирования дома, уделив
-                            ей
-                            особое внимание.
-                        </div>
-
-
-                    </div>
-                    <div class="accordion-one__item">
-                        <div class="accordion-one__header">
-                            <div class="accordion-one__title">Вопрос освещения занимает важное место
-                            </div>
-                            <div class="accordion-one__icon">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                                        fill="#ABABAB" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="accordion-one__text" aria-expanded="false">
-                            Каркас лестницы лучше устанавливать на этапе черновой отделки и чем раньше, тем лучше.
-                            Так
-                            как при монтаже каркас лестницы крепиться и к полу, и к стенам, то при отделке все
-                            элементы
-                            крепежа скроются под штукатуркой или стяжкой, а сама стяжка придаст больше жесткости
-                            лестнице. А вот обшивать лестницу лучше на самом последнем этапе, когда вы уже готовы
-                            въехать в дом. Поэтому о лестнице нужно думать уже на этапе проектирования дома, уделив
-                            ей
-                            особое внимание.
-                        </div>
-
-
-                    </div>
-                    <div class="accordion-one__item">
-                        <div class="accordion-one__header">
-                            <div class="accordion-one__title">Когда лучше всего заказать лестницу при
-                                строительстве?
-                            </div>
-                            <div class="accordion-one__icon">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="close-accordion">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-                                        fill="#ABABAB" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="accordion-one__text" aria-expanded="false">
-                            Каркас лестницы лучше устанавливать на этапе черновой отделки и чем раньше, тем лучше.
-                            Так
-                            как при монтаже каркас лестницы крепиться и к полу, и к стенам, то при отделке все
-                            элементы
-                            крепежа скроются под штукатуркой или стяжкой, а сама стяжка придаст больше жесткости
-                            лестнице. А вот обшивать лестницу лучше на самом последнем этапе, когда вы уже готовы
-                            въехать в дом. Поэтому о лестнице нужно думать уже на этапе проектирования дома, уделив
-                            ей
-                            особое внимание.
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="callback bg-green-1">
+    <section class="callback bg-green-1 mt-140">
         <div class="callback__pattern" style="background-image: url('assets/img/site/pattern_2.png');">
             <div class="callback__container container">
                 <div class="callback__head">
@@ -960,7 +669,7 @@
                     </form>
                 </div>
                 <div class="callback__picture">
-                    <img src="assets/img/site/man.png" alt="man">
+                    <img src="../assets/img/site/man.png" alt="man">
                 </div>
             </div>
         </div>
@@ -978,7 +687,7 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <img src="assets/img/site/logo.png" alt="logo">
+                                        <img src="../assets/img/site/logo.png" alt="logo">
                                     </a>
                                 </li>
                                 <li>
@@ -1095,18 +804,18 @@
 
                                 <li class="footer__navigation_social">
                                     <a href="#" class="instagram">
-                                        <img src="src/icons/instagram.svg" alt="social">
+                                        <img src="../src/icons/instagram.svg" alt="social">
                                     </a>
                                     <a href="#" class="whatsapp">
-                                        <img src="src/icons/whatsapp.svg" alt="social">
+                                        <img src="../src/icons/whatsapp.svg" alt="social">
                                     </a>
 
                                     <a href="#" class="telegram">
-                                        <img src="src/icons/telegram.svg" alt="social">
+                                        <img src="../src/icons/telegram.svg" alt="social">
                                     </a>
 
                                     <a href="#" class="viber">
-                                        <img src="src/icons/viber.svg" alt="social">
+                                        <img src="../src/icons/viber.svg" alt="social">
                                     </a>
                                 </li>
 
@@ -1155,18 +864,18 @@
 
                     <li class="footer__navigation_social">
                         <a href="#" class="instagram">
-                            <img src="src/icons/instagram.svg" alt="social">
+                            <img src="../src/icons/instagram.svg" alt="social">
                         </a>
                         <a href="#" class="whatsapp">
-                            <img src="src/icons/whatsapp.svg" alt="social">
+                            <img src="../src/icons/whatsapp.svg" alt="social">
                         </a>
 
                         <a href="#" class="telegram">
-                            <img src="src/icons/telegram.svg" alt="social">
+                            <img src="../src/icons/telegram.svg" alt="social">
                         </a>
 
                         <a href="#" class="viber">
-                            <img src="src/icons/viber.svg" alt="social">
+                            <img src="../src/icons/viber.svg" alt="social">
                         </a>
                     </li>
                 </ul>
@@ -1185,27 +894,27 @@
 
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/mir.svg" alt="pay-icon">
+                                    <img src="../src/icons/mir.svg" alt="pay-icon">
                                 </a>
                             </div>
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/paypal.svg" alt="pay-icon">
+                                    <img src="../src/icons/paypal.svg" alt="pay-icon">
                                 </a>
                             </div>
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/visa.svg" alt="pay-icon">
+                                    <img src="../src/icons/visa.svg" alt="pay-icon">
                                 </a>
                             </div>
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/mastercard.svg" alt="pay-icon">
+                                    <img src="../src/icons/mastercard.svg" alt="pay-icon">
                                 </a>
                             </div>
                             <div class="footer__pay_btn">
                                 <a href="">
-                                    <img src="src/icons/qiwi.svg" alt="pay-icon">
+                                    <img src="../src/icons/qiwi.svg" alt="pay-icon">
                                 </a>
                             </div>
                         </div>
@@ -1257,8 +966,8 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="src/js/script.js"></script>
-    <script type="text/javascript" src="src/js/slick/slick.min.js"></script>
+    <script src="../src/js/script.js"></script>
+    <script type="text/javascript" src="../src/js/slick/slick.min.js"></script>
 
 
     <script>
@@ -1291,17 +1000,14 @@
                 {
                     breakpoint: 320,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                         variableWidth: true
                     }
                 }
-
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         })
+
     </script>
 
 </body>
