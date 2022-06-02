@@ -28,8 +28,9 @@ $(document).ready(function () {
 
     let accordionsTwo = document.querySelectorAll('.accordion-two__item')
     accordionsTwo.forEach(el => {
-        el.addEventListener('click', (e) => {
-            const self = e.currentTarget;
+        const elem = el
+        el.querySelector('.accordion-two__header').addEventListener('click', (e) => {
+            const self = elem;
             const icon = self.querySelector('.accordion-two__icon')
             const content = self.querySelector('.accordion-two__text')
             const head = self.querySelector('.accordion-two__header')

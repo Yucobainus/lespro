@@ -1,6 +1,5 @@
 @import url(null.css);
 @import url(iconfont.css);
-@import url(stairways.css);
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 * {
   font-family: "Manrope", sans-serif;
@@ -2533,6 +2532,130 @@ body._lock {
   border-bottom: 1px solid #eaeaea;
 }
 
+.filter__radio_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter__radio_item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.filter__radio_item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+  height: 20px;
+  width: 20px;
+}
+
+.filter__radio_item input[type="radio"]:checked ~ .filter__radio_custom::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #32bf73;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.filter__radio_item input[type="radio"]:checked ~ .filter__radio_custom {
+  border-color: #32bf73;
+}
+
+.filter__radio_item:hover > label:hover {
+  cursor: pointer;
+}
+
+.filter__radio_custom {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+}
+
+.filter__checkboxes_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter__checkboxes_item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.filter__checkboxes_item input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.filter__checkboxes_item input[type="checkbox"]:checked ~ .filter__checkboxes_custom {
+  background-color: #32bf73;
+}
+
+.filter__checkboxes_custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+}
+
+.filter__checkboxes_custom:after {
+  content: "";
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 9px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg) translateX(-100%) translateY(-21%);
+          transform: rotate(45deg) translateX(-100%) translateY(-21%);
+}
+
 .filter__more a {
   color: #747474;
 }
@@ -3708,6 +3831,14 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  row-gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 320px) {
@@ -3744,11 +3875,11 @@ body._lock {
 @media screen and (min-width: 1230px) {
   .main-banner__info {
     padding: 30px;
+    row-gap: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

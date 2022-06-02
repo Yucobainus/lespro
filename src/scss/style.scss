@@ -1,6 +1,5 @@
 @import url(null.css);
 @import url(iconfont.css);
-@import url(stairways.css);
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
 //Adaptive Value
@@ -1896,20 +1895,106 @@ body {
     // &__accordion {
     // }
 
-    // .filter__radio
+    //.filter__radio
 
-    // &__radio {
-    // }
+    &__radio {
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &_item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            input[type="radio"] {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                z-index: 2;
+                height: 20px;
+                width: 20px;
+                &:checked ~ .filter__radio_custom::before {
+                    position: absolute;
+                    content: "";
+                    width: 12px;
+                    height: 12px;
+                    background-color: #32bf73;
+                    top: 50%;
+                    left: 50%;
+                    border-radius: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+                &:checked ~ .filter__radio_custom {
+                    border-color: #32bf73;
+                }
+            }
+            &:hover > label:hover {
+                cursor: pointer;
+            }
+        }
+
+        &_custom {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            position: relative;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            border: 1px solid #eaeaea;
+            border-radius: 50%;
+        }
+    }
 
     // .filter__checkboxes
 
-    // &__checkboxes {
-    // }
-
-    // .filter__check
-
-    // &__check {
-    // }
+    &__checkboxes {
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &_item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            input[type="checkbox"] {
+                position: absolute;
+                opacity: 0;
+                z-index: 2;
+                cursor: pointer;
+                height: 20px;
+                width: 20px;
+                &:checked ~ .filter__checkboxes_custom:after {
+                }
+                &:checked ~ .filter__checkboxes_custom {
+                    background-color: #32bf73;
+                }
+            }
+        }
+        &_custom {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            border: 1px solid #eaeaea;
+            border-radius: 2px;
+            &:after {
+                content: "";
+                left: 50%;
+                top: 50%;
+                position: absolute;
+                width: 9px;
+                height: 13px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg) translateX(-100%) translateY(-21%);
+            }
+        }
+    }
 
     // .filter__more
 
@@ -2783,7 +2868,6 @@ body {
             height: 420px;
         }
 
-
         @media screen and (min-width: #{$containerWidth + px}) {
             width: 915px;
             height: 420px;
@@ -2797,6 +2881,10 @@ body {
         // .main-banner__info_title
         position: relative;
         display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+
+        align-items: center;
         @media screen and (min-width: #{$minWidth + px}) {
             width: 100%;
             height: 270px;
@@ -2814,8 +2902,8 @@ body {
         }
         @media screen and (min-width: #{$containerWidth + px}) {
             padding: 30px;
-            flex-direction: column;
             row-gap: 20px;
+            flex-direction: column;
             align-items: center;
             width: 285px;
             height: 420px;
