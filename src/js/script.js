@@ -115,9 +115,6 @@ $(document).ready(function () {
     }
 
     scrollbar("price", "₽")
-    scrollbar("area", "м²")
-    scrollbar("cool-geas", "кВт")
-    scrollbar("noize", "dB")
 
 
 })

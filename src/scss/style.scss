@@ -3228,24 +3228,37 @@ body {
     &__options {
         display: flex;
         align-items: center;
-        @media screen and (max-width: #{$smallDesktop + px}) {
-            flex-direction: column;
-            row-gap: 20px;
-        }
+        column-gap: 15px;
     }
 
     // .scrollbar__value
 
     &__value {
         position: relative;
+        border: 1px solid #eaeaea;
+        padding: 12px 16px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2px;
+        label {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 14px;
+            color: #595959;
+        }
         & input {
             position: relative;
             width: 100%;
-            padding: 10px 0;
-            border: 1px solid #eaeaea;
             font-size: 0.875rem;
             font-weight: 300;
-            text-align: center;
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            color: #1b1b1b;
         }
     }
 
@@ -3317,7 +3330,7 @@ body {
             top: 0;
             bottom: 0;
             height: 8px;
-            background-color: #eaeaea;
+            background-color: #32bf73;
         }
 
         // .sidebar-range__slider_thumb
