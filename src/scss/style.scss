@@ -190,12 +190,22 @@ body {
     background-color: $lightGreen;
     text-align: center;
     color: white;
+    transition: .5s;
+    &:hover{
+        background: #22A45E;
+        transition: .5s;
+    }
 }
 
 .yellow-btn {
     background-color: $lightYellow;
     text-align: center;
     color: $black;
+    transition: .5s;
+    &:hover{
+        background: #FFAC1B;
+        transition: .5s;
+    }
 }
 
 .instagram {
@@ -907,17 +917,36 @@ body {
                     color: $darkGrey;
                     font-size: 0.875rem;
                 }
-                @media screen and (max-width: #{$tabletWidth + px}) {
+                @media screen and (min-width: #{$minWidth + px}) {
                     display: inline-block;
                 }
-                @media screen and (max-width: #{$minWidth + px}) {
+                @media screen and (min-width: #{$smallDesktop + px}) {
+          
                     display: none;
                 }
+    
             }
             li:nth-child(3) {
                 @media screen and (max-width: #{$mobileWidth + px}) {
                     display: none;
                 }
+            }
+            li {
+                .header__content_info-item{
+                    @media screen and (min-width: #{$minWidth + px}) {
+                        display: none;
+                    }
+                    @media screen and (min-width: #{$tabletWidth + px}) {
+                        display: flex;
+                        width: auto;
+                    }
+                }
+                div.footer-show{
+                    @media screen and (min-width: #{$minWidth + px}) {
+                        display: none;
+                    }
+                }
+
             }
         }
         @media screen and (min-width: #{$smallDesktop + 1 + px}) {

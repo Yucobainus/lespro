@@ -154,12 +154,28 @@ body._lock {
   background-color: #32bf73;
   text-align: center;
   color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.green-btn:hover {
+  background: #22A45E;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .yellow-btn {
   background-color: #ffbb45;
   text-align: center;
   color: #1b1b1b;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.yellow-btn:hover {
+  background: #FFAC1B;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .instagram {
@@ -1323,13 +1339,13 @@ body._lock {
   font-size: 0.875rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .footer__small-dekstop ul li:nth-child(2) {
     display: inline-block;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 992px) {
   .footer__small-dekstop ul li:nth-child(2) {
     display: none;
   }
@@ -1337,6 +1353,27 @@ body._lock {
 
 @media screen and (max-width: 576px) {
   .footer__small-dekstop ul li:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer__small-dekstop ul li .header__content_info-item {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__small-dekstop ul li .header__content_info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer__small-dekstop ul li div.footer-show {
     display: none;
   }
 }
