@@ -84,12 +84,12 @@
                         </div>
 
                         <div class="header__content_info">
-                            <div class="header__content_info-item _icon-map">
+                            <div class="header__content_info-item _icon-map  desktop-hide">
                                 <a href="#" class="text-15">
                                     МО, г. Красногорск, д. Гольёво Центральная улица, 7А
                                 </a>
                             </div>
-                            <div class="header__content_info-item _icon-old-phone desktop-hide">
+                            <div class="header__content_info-item _icon-old-phone">
                                 <div class="header__content_info-item-group">
                                     <a href="tel:+84959896494" class="text-15 text-bold">
                                         8 (495) 989-64-94
@@ -195,7 +195,7 @@
 
             <div class="main-banner__slider slider-banner">
 
-                <div class="slider-banner__wrapper">
+                <div class="slider-banner__wrapper  carousel-banner">
 
                     <div class="slider-banner__slide" style="background-color: #F9F5EA;">
                         <div class="slider-banner__green-title">
@@ -214,7 +214,40 @@
                             <img src="assets/img/banners/slider-banner-photo.png" alt="slider-banner">
                         </div>
                     </div>
-
+                    <div class="slider-banner__slide" style="background-color: #F9F5EA;">
+                        <div class="slider-banner__green-title">
+                            <span class="text-extra text-30"> 1 440 ₽/пог.м </span>
+                        </div>
+                        <div class="slider-banner__brown-text">
+                            <span class="text-18">Специальные цены на строительный </span>
+                        </div>
+                        <div class="slider-banner__extra-text">
+                            <span class="text-extra">БРУС</span>
+                        </div>
+                        <div class="slider-banner__link">
+                            <a href="#" class="yellow-btn text-14 text-bold">Перейти в каталог</a>
+                        </div>
+                        <div class="slider-banner__absolute-pic">
+                            <img src="assets/img/banners/slider-banner-photo.png" alt="slider-banner">
+                        </div>
+                    </div>
+                    <div class="slider-banner__slide" style="background-color: #F9F5EA;">
+                        <div class="slider-banner__green-title">
+                            <span class="text-extra text-30"> 1 440 ₽/пог.м </span>
+                        </div>
+                        <div class="slider-banner__brown-text">
+                            <span class="text-18">Специальные цены на строительный </span>
+                        </div>
+                        <div class="slider-banner__extra-text">
+                            <span class="text-extra">БРУС</span>
+                        </div>
+                        <div class="slider-banner__link">
+                            <a href="#" class="yellow-btn text-14 text-bold">Перейти в каталог</a>
+                        </div>
+                        <div class="slider-banner__absolute-pic">
+                            <img src="assets/img/banners/slider-banner-photo.png" alt="slider-banner">
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -230,7 +263,7 @@
                 </div>
                 <div class="main-banner__info_btn">
                     <a href="#">
-                     <span> Посмотреть все </span>
+                        <span> Посмотреть все </span>
                         <img src="src/icons/arrow-right.svg" alt="arrow-right">
                     </a>
                 </div>
@@ -1314,6 +1347,15 @@
         })
     </script>
 
+
+    <script>
+        $('.carousel-banner').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+        })
+    </script>
 </body>
 
 </html>

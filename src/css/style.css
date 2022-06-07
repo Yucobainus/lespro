@@ -1,6 +1,12 @@
+@charset "UTF-8";
 @import url(null.css);
 @import url(iconfont.css);
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Bold.ttf");
+}
+
 * {
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
@@ -415,6 +421,12 @@ body._lock {
   }
 }
 
+@media screen and (min-width: 1230px) {
+  .header__head_info {
+    width: 45%;
+  }
+}
+
 .header__head_profile {
   display: none;
 }
@@ -508,6 +520,14 @@ body._lock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .header__head_info-item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -693,6 +713,7 @@ body._lock {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 30%;
   }
 }
 
@@ -726,6 +747,14 @@ body._lock {
           justify-content: center;
   width: 150px;
   height: 46px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+  /* identical to box height, or 200% */
+  /* Цвета/Белый */
+  color: #ffffff;
 }
 
 .header__content_profile-item-group {
@@ -848,6 +877,13 @@ body._lock {
 @media screen and (min-width: 768px) {
   .header__navigation {
     padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .header__navigation {
+    -webkit-column-gap: 62px;
+            column-gap: 62px;
   }
 }
 
@@ -1021,6 +1057,10 @@ body._lock {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.header__navigation_nav-active a {
+  white-space: nowrap;
 }
 
 .header__navigation_nav-active:hover {
@@ -3976,7 +4016,6 @@ body._lock {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 27px;
   }
 }
 
@@ -3995,6 +4034,7 @@ body._lock {
   .main-banner__slider {
     width: 100%;
     height: 330px;
+    margin-bottom: 60px;
   }
 }
 
@@ -4020,6 +4060,7 @@ body._lock {
   .main-banner__slider {
     width: 915px;
     height: 420px;
+    margin-bottom: 0;
   }
 }
 
@@ -4230,6 +4271,14 @@ body._lock {
   height: 100%;
 }
 
+.slider-banner__wrapper .slick-list {
+  height: 100%;
+}
+
+.slider-banner__wrapper .slick-list .slick-track {
+  height: 100%;
+}
+
 .slider-banner__slide {
   position: relative;
   display: -webkit-box;
@@ -4260,6 +4309,12 @@ body._lock {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 34px 30px;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .slider-banner__slide {
+    padding: 73px 50px;
   }
 }
 

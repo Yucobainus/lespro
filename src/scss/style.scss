@@ -2,6 +2,14 @@
 @import url(iconfont.css);
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
+//Gilroy-Font
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.ttf');
+}
+
+
 //Adaptive Value
 @mixin adaptiveValue($property, $startSize, $minSize, $widthFrom: $containerWidth, $widthTo: 320) {
     #{$property}: #{$startSize + px};
@@ -353,6 +361,9 @@ body {
                 display: flex;
                 justify-content: space-around;
             }
+            @media screen and (min-width: #{$containerWidth + px}){
+                width: 45%;
+            }
         }
         &_profile {
             display: none;
@@ -402,6 +413,9 @@ body {
             width: 50%;
             @media screen and (min-width: #{$smallDesktop + px}) {
                 justify-content: center;
+            }
+            @media screen and (min-width: #{$containerWidth + px}){
+                justify-content: start;
             }
             & a,
             span {
@@ -513,6 +527,7 @@ body {
             @media screen and (min-width: #{$containerWidth + px}) {
                 column-gap: 15px;
                 justify-content: space-between;
+                width: 30%;
             }
 
             &.col-45 {
@@ -524,12 +539,22 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            & .green-btn {
+            .green-btn {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 150px;
                 height: 46px;
+                font-family: "Manrope";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 26px;
+                /* identical to box height, or 200% */
+
+                /* Цвета/Белый */
+
+                color: #ffffff;
             }
         }
         &_profile-item-group {
@@ -603,7 +628,9 @@ body {
         @media screen and (min-width: #{$tabletWidth + px}) {
             padding-top: 0;
         }
-
+        @media screen and (min-width: #{$containerWidth+ px}) {
+            column-gap: 62px;
+        }
         &_cart {
             min-width: 60px;
             height: 60px;
@@ -655,7 +682,7 @@ body {
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                @media screen and (min-width: #{$containerWidth + px}){
+                @media screen and (min-width: #{$containerWidth + px}) {
                     flex-wrap: nowrap;
                 }
                 & li {
@@ -702,6 +729,9 @@ body {
             background-color: $lightYellow;
             @media screen and (min-width: #{$smallDesktop + px}) {
                 display: flex;
+            }
+            a{
+                white-space: nowrap;
             }
             &:hover {
                 transition: 150ms;
@@ -2966,7 +2996,6 @@ body {
         display: flex;
         @media screen and (min-width: #{$minWidth + px}) {
             flex-direction: column;
-            row-gap: 27px;
         }
         @media screen and (min-width: #{$containerWidth + px}) {
             flex-direction: row;
@@ -2978,6 +3007,7 @@ body {
         @media screen and (min-width: #{$minWidth + px}) {
             width: 100%;
             height: 330px;
+            margin-bottom: 60px;
         }
         @media screen and (min-width: #{$mobileWidth + px}) {
             height: 310px;
@@ -2992,6 +3022,7 @@ body {
         @media screen and (min-width: #{$containerWidth + px}) {
             width: 915px;
             height: 420px;
+            margin-bottom: 0;
         }
     }
 
@@ -3146,6 +3177,12 @@ body {
 
     &__wrapper {
         height: 100%;
+        .slick-list {
+            height: 100%;
+            .slick-track {
+                height: 100%;
+            }
+        }
     }
 
     // .slider-banner__slide
@@ -3165,6 +3202,9 @@ body {
             text-align: left;
             align-items: flex-start;
             padding: 34px 30px;
+        }
+        @media screen and (min-width: #{$containerWidth + px}) {
+            padding: 73px 50px;
         }
 
         span,
