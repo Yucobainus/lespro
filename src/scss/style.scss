@@ -254,7 +254,7 @@ body {
     &__container {
         display: flex;
         flex-direction: column;
-        @media screen and (max-width: #{$tabletWidth + px}) {
+        @media screen and (min-width: #{$tabletWidth + px}) {
             row-gap: 23px;
         }
     }
@@ -263,21 +263,26 @@ body {
         display: flex;
         align-items: center;
         column-gap: 5px;
-        @media screen and (max-width: #{$mobileWidth + px}) {
+        @media screen and (min-width: #{$minWidth + px}) {
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        @media screen and (min-width: #{$mobileWidth + px}) {
             justify-content: space-around;
             padding: 10px 0;
         }
-        @media screen and (max-width: #{$minWidth + px}) {
-            justify-content: space-between;
+        @media screen and (max-width: #{$mobileWidth + px}) {
+            background-color: #ffffff;
         }
         &_catalog {
-            @media screen and (min-width: #{$mobileWidth + px}) {
-                display: none;
-            }
             @media screen and (min-width: #{$minWidth + px}) {
                 width: 50px;
                 height: 50px;
             }
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                display: none;
+            }
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -286,13 +291,14 @@ body {
             background-color: $lightYellow;
         }
         &_account {
-            @media screen and (min-width: #{$mobileWidth + px}) {
-                display: none;
-            }
             @media screen and (min-width: #{$minWidth + px}) {
                 width: 50px;
                 height: 50px;
             }
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                display: none;
+            }
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -315,64 +321,78 @@ body {
                 align-items: center;
                 justify-content: center;
             }
-            @media screen and (min-width: #{$smallDesktop + px}) {
-                display: none;
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                min-width: 60px;
+                height: 60px;
             }
+            // @media screen and (min-width: #{$smallDesktop + px}) {
+            //     display: none;
+            // }
         }
         &_nav {
             width: 25%;
-            display: flex;
+            display: none;
             align-items: center;
             & ul {
                 display: flex;
                 column-gap: 60px;
             }
-            @media screen and (max-width: #{$smallDesktop + px}) {
-                display: none;
+            @media screen and (min-width: #{$containerWidth + px}) {
+                display: flex;
             }
         }
         &_info {
             width: 45%;
-            display: flex;
+
             column-gap: 25px;
-            @media screen and (max-width: #{$smallDesktop + px}) {
-                width: 70%;
-                justify-content: space-around;
-            }
-            @media screen and (max-width: #{$tabletWidth + px}) {
+            @media screen and (min-width: #{$minWidth + px}) {
                 display: none;
+            }
+            @media screen and (min-width: #{$smallDesktop + px}) {
+                width: 70%;
+                display: flex;
+                justify-content: space-around;
             }
         }
         &_profile {
-            width: 30%;
-            @media screen and (max-width: #{$tabletWidth + px}) {
-                display: none;
+            display: none;
+            @media screen and (min-width: #{$minWidth + px}) {
+                width: 30%;
+            }
+            @media screen and (min-width: #{$smallDesktop + px}) {
+                display: block;
+                width: 50%;
+            }
+            @media screen and (min-width: #{$containerWidth + px}) {
+                width: 30%;
             }
         }
         &_phones {
-            display: flex;
             justify-content: center;
             width: 85%;
-            @media screen and (min-width: #{$tabletWidth + px}) {
-                display: none;
+            display: none;
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                display: flex;
             }
-            @media screen and (max-width: #{$mobileWidth + px}) {
+            @media screen and (min-width: #{$smallDesktop + px}) {
                 display: none;
             }
         }
         &_icon-phone {
             background-color: $lightGreen;
-            min-width: 60px;
-            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
-            @media screen and (min-width: #{$tabletWidth + px}) {
-                display: none;
-            }
             @media screen and (min-width: #{$minWidth + px}) {
                 min-width: 50px;
                 height: 50px;
+            }
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                min-width: 60px;
+                height: 60px;
+            }
+            @media screen and (min-width: #{$smallDesktop + px}) {
+                display: none;
             }
         }
 
@@ -380,7 +400,7 @@ body {
             display: flex;
             align-items: center;
             width: 50%;
-            @media screen and (max-width: #{$smallDesktop + px}) {
+            @media screen and (min-width: #{$smallDesktop + px}) {
                 justify-content: center;
             }
             & a,
@@ -410,14 +430,12 @@ body {
     }
 
     &__content {
-        display: flex;
+        display: none;
         padding: 25px 0;
         column-gap: 5px;
-        @media screen and (max-width: #{$smallDesktop + px}) {
+        @media screen and (min-width: #{$smallDesktop + px}) {
             column-gap: 20px;
-        }
-        @media screen and (max-width: #{$tabletWidth + px}) {
-            display: none;
+            display: flex;
         }
         &_logo {
             width: 25%;
@@ -434,12 +452,15 @@ body {
 
         &_info {
             display: flex;
-            width: 45%;
+
             column-gap: 25px;
-            @include adaptiveValue("column-gap", 25, 5, $containerWidth, $smallDesktop);
-            @media screen and (max-width: #{$smallDesktop + px}) {
+            column-gap: 20px;
+            @media screen and (min-width: #{$minWidth + px}) {
                 width: 25%;
                 justify-content: center;
+            }
+            @media screen and (min-width: #{$containerWidth + px}) {
+                width: 45%;
             }
         }
         &_info-item {
@@ -455,9 +476,16 @@ body {
             &::before {
                 color: $lightGreen;
             }
-            @media screen and (max-width: #{$smallDesktop + px}) {
+            @media screen and (min-width: #{$smallDesktop + px}) {
                 &.desktop-hide {
                     display: none;
+                }
+                width: auto;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: #{$containerWidth + px}) {
+                &.desktop-hide {
+                    display: flex;
                 }
                 width: 100%;
             }
@@ -468,14 +496,25 @@ body {
         }
 
         &_profile {
-            width: 30%;
-            column-gap: 15px;
+            width: 50%;
+
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            @media screen and (max-width: #{$smallDesktop + px}) {
+
+            @media screen and (min-width: #{$minWidth + px}) {
                 width: 50%;
             }
+            @media screen and (min-width: #{$smallDesktop + px}) {
+                width: 45%;
+                column-gap: 30px;
+                justify-content: end;
+            }
+
+            @media screen and (min-width: #{$containerWidth + px}) {
+                column-gap: 15px;
+                justify-content: space-between;
+            }
+
             &.col-45 {
                 column-gap: 45px;
             }
@@ -483,8 +522,14 @@ body {
         &_profile-item {
             position: relative;
             display: flex;
+            align-items: center;
+            justify-content: center;
             & .green-btn {
-                padding: 10px 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                height: 46px;
             }
         }
         &_profile-item-group {
@@ -505,6 +550,13 @@ body {
             border-radius: 50%;
             background-color: #f84f4f;
             position: absolute;
+
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            color: #ffffff;
         }
         &_cart {
             padding: 22px;
@@ -526,6 +578,10 @@ body {
                 padding: 0;
                 justify-content: center;
             }
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                width: 60px;
+                height: 60px;
+            }
         }
     }
 
@@ -538,15 +594,29 @@ body {
         @media screen and (max-width: #{$smallDesktop + px}) {
             column-gap: 20px;
         }
+        @media screen and (min-width: #{$minWidth + px}) {
+            padding-top: 0;
+        }
+        @media screen and (min-width: #{$mobileWidth + px}) {
+            padding-top: 33px;
+        }
+        @media screen and (min-width: #{$tabletWidth + px}) {
+            padding-top: 0;
+        }
+
         &_cart {
-            @media screen and (min-width: #{$tabletWidth + px}) {
-                display: none;
-            }
             min-width: 60px;
             height: 60px;
             @media screen and (min-width: #{$minWidth + px}) {
                 min-width: 50px;
                 height: 50px;
+            }
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                min-width: 60px;
+                height: 60px;
+            }
+            @media screen and (min-width: #{$smallDesktop + px}) {
+                display: none;
             }
         }
         &_cart-body {
@@ -556,7 +626,6 @@ body {
             }
         }
         &_user {
-            display: flex;
             background-color: $lightGreen;
             align-items: center;
             justify-content: center;
@@ -565,24 +634,30 @@ body {
             & a::before {
                 color: white;
             }
-            @media screen and (min-width: #{$tabletWidth + px}) {
+            @media screen and (min-width: #{$minWidth + px}) {
                 display: none;
             }
-            @media screen and (max-width: #{$mobileWidth + px}) {
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                display: flex;
+            }
+            @media screen and (min-width: #{$smallDesktop + px}) {
                 display: none;
             }
         }
 
         &_nav {
             height: 100%;
-            @media screen and (max-width: #{$mobileWidth + px}) {
-                display: none;
+            display: none;
+            @media screen and (min-width: #{$mobileWidth + px}) {
+                display: block;
             }
             & ul {
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-
+                @media screen and (min-width: #{$containerWidth + px}){
+                    flex-wrap: nowrap;
+                }
                 & li {
                     a:hover {
                         cursor: pointer;
@@ -593,10 +668,12 @@ body {
         &_nav-list {
             display: flex;
             column-gap: 60px;
-            margin-left: 63px;
+            @media screen and (min-width: #{$containerWidth + px}) {
+                margin-left: 63px;
+            }
         }
         &_nav-item {
-            display: flex;
+            display: none;
             align-items: center;
             @media screen and (max-width: #{$tabletWidth + px}) {
                 padding: 22px;
@@ -604,8 +681,8 @@ body {
                     display: none;
                 }
             }
-            @media screen and (max-width: #{$smallDesktop + px}) {
-                display: none;
+            @media screen and (min-width: #{$containerWidth + px}) {
+                display: flex;
             }
             &::before {
                 padding-right: 5px;
@@ -618,13 +695,13 @@ body {
             }
         }
         &_nav-active {
-            display: flex;
+            display: none;
             align-items: center;
             padding: 0 31px;
             height: 70px;
             background-color: $lightYellow;
-            @media screen and (max-width: #{$tabletWidth + px}) {
-                display: none;
+            @media screen and (min-width: #{$smallDesktop + px}) {
+                display: flex;
             }
             &:hover {
                 transition: 150ms;
@@ -653,7 +730,7 @@ body {
             min-width: 60px;
             height: 60px;
             background-color: $lightYellow;
-            @media screen and (min-width: #{$tabletWidth + px}) {
+            @media screen and (min-width: #{$smallDesktop + px}) {
                 display: none;
             }
         }
@@ -673,6 +750,14 @@ body {
             }
             @media screen and (max-width: #{$smallDesktop + px}) {
                 flex-grow: 1;
+                height: 60px;
+            }
+            @media screen and (max-width: #{$mobileWidth + px}) {
+                width: 220px;
+            }
+            @media screen and (min-width: #{$smallDesktop + px}) {
+                flex-grow: 1;
+                margin-left: 20px;
             }
         }
     }
@@ -908,6 +993,7 @@ body {
     &__cart {
         display: flex;
         align-items: center;
+        padding: 8px 0;
         @media screen and (max-width: #{$smallDesktop + px}) {
             justify-content: space-between;
         }
