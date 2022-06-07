@@ -325,9 +325,9 @@ body {
                 min-width: 60px;
                 height: 60px;
             }
-            // @media screen and (min-width: #{$smallDesktop + px}) {
-            //     display: none;
-            // }
+            @media screen and (min-width: #{$containerWidth + px}) {
+                display: none;
+            }
         }
         &_nav {
             width: 25%;

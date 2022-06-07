@@ -362,6 +362,12 @@ body._lock {
   }
 }
 
+@media screen and (min-width: 1230px) {
+  .header__head_burger {
+    display: none;
+  }
+}
+
 .header__head_nav {
   width: 25%;
   display: none;
