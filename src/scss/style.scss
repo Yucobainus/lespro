@@ -5,10 +5,9 @@
 //Gilroy-Font
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Bold.ttf');
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Bold.ttf");
 }
-
 
 //Adaptive Value
 @mixin adaptiveValue($property, $startSize, $minSize, $widthFrom: $containerWidth, $widthTo: 320) {
@@ -190,10 +189,10 @@ body {
     background-color: $lightGreen;
     text-align: center;
     color: white;
-    transition: .5s;
-    &:hover{
-        background: #22A45E;
-        transition: .5s;
+    transition: 0.5s;
+    &:hover {
+        background: #22a45e;
+        transition: 0.5s;
     }
 }
 
@@ -201,10 +200,10 @@ body {
     background-color: $lightYellow;
     text-align: center;
     color: $black;
-    transition: .5s;
-    &:hover{
-        background: #FFAC1B;
-        transition: .5s;
+    transition: 0.5s;
+    &:hover {
+        background: #ffac1b;
+        transition: 0.5s;
     }
 }
 
@@ -371,7 +370,7 @@ body {
                 display: flex;
                 justify-content: space-around;
             }
-            @media screen and (min-width: #{$containerWidth + px}){
+            @media screen and (min-width: #{$containerWidth + px}) {
                 width: 45%;
             }
         }
@@ -424,7 +423,7 @@ body {
             @media screen and (min-width: #{$smallDesktop + px}) {
                 justify-content: center;
             }
-            @media screen and (min-width: #{$containerWidth + px}){
+            @media screen and (min-width: #{$containerWidth + px}) {
                 justify-content: start;
             }
             & a,
@@ -740,7 +739,7 @@ body {
             @media screen and (min-width: #{$smallDesktop + px}) {
                 display: flex;
             }
-            a{
+            a {
                 white-space: nowrap;
             }
             &:hover {
@@ -921,10 +920,8 @@ body {
                     display: inline-block;
                 }
                 @media screen and (min-width: #{$smallDesktop + px}) {
-          
                     display: none;
                 }
-    
             }
             li:nth-child(3) {
                 @media screen and (max-width: #{$mobileWidth + px}) {
@@ -932,7 +929,7 @@ body {
                 }
             }
             li {
-                .header__content_info-item{
+                .header__content_info-item {
                     @media screen and (min-width: #{$minWidth + px}) {
                         display: none;
                     }
@@ -941,12 +938,11 @@ body {
                         width: auto;
                     }
                 }
-                div.footer-show{
+                div.footer-show {
                     @media screen and (min-width: #{$minWidth + px}) {
                         display: none;
                     }
                 }
-
             }
         }
         @media screen and (min-width: #{$smallDesktop + 1 + px}) {
@@ -1367,6 +1363,12 @@ body {
             @media screen and (max-width: #{$tabletWidth + px}) {
                 display: none;
             }
+            transition: 0.5s;
+            &:hover {
+                background-color: #22a45e;
+                color: #ffffff;
+                transition: 0.5s;
+            }
         }
     }
 
@@ -1387,13 +1389,21 @@ body {
                     row-gap: 15px;
                 }
                 li {
-                    &.active {
-                        background: #22a45e;
-                        color: #ffffff;
+                    a {
+                        padding: 15px 20px;
+                        color: #ababab;
+                        background: #f9f9f9;
+                        transition: 0.5s;
+                        &.active {
+                            background: #22a45e;
+                            color: #ffffff;
+                        }
+                        &:hover {
+                            background-color: #22a45e;
+                            color: #ffffff;
+                            transition: 0.5s;
+                        }
                     }
-                    padding: 15px 20px;
-                    color: #ababab;
-                    background: #f9f9f9;
                 }
             }
         }
@@ -1454,6 +1464,16 @@ body {
         @media screen and (max-width: 1440px) {
             display: none !important;
         }
+        transition: 0.5s;
+        &:hover {
+            cursor: pointer;
+            background: #22a45e;
+            transition: 0.5s;
+            svg path {
+                fill: #ffffff;
+                transition: 0.5s;
+            }
+        }
     }
 
     // .slider-1__arr-prev
@@ -1508,12 +1528,31 @@ body {
     &__title {
         margin-bottom: 4px;
         width: 248px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+
+        /* Цвета/Черный */
+
+        color: #1b1b1b;
     }
 
     // .product-cart__supplement
 
     &__supplement {
         margin-bottom: 4px;
+        span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #a3a3a3;
+        }
     }
 
     &__supplement-2 {
@@ -1539,6 +1578,11 @@ body {
 
         &_actual {
             color: #22a45e;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #22a45e;
         }
 
         // .product-cart__price_old
@@ -1546,6 +1590,11 @@ body {
         &_old {
             color: #989898;
             text-decoration-line: line-through;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            color: #989898;
         }
     }
 
@@ -1557,12 +1606,21 @@ body {
         column-gap: 8px;
         margin-bottom: 25px;
         &_switcher {
+            transition: 0.5s;
             background: #f8f8fa;
             width: 40px;
             height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
+            &:hover {
+                cursor: pointer;
+                transition: 0.5s;
+                svg path {
+                    fill: #22a45e;
+                    transition: 0.5s;
+                }
+            }
         }
 
         // .product-cart__counter_input

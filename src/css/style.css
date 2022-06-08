@@ -3,7 +3,7 @@
 @import url(iconfont.css);
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   src: url("../fonts/Gilroy-Bold.ttf");
 }
 
@@ -154,28 +154,28 @@ body._lock {
   background-color: #32bf73;
   text-align: center;
   color: white;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .green-btn:hover {
-  background: #22A45E;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background: #22a45e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .yellow-btn {
   background-color: #ffbb45;
   text-align: center;
   color: #1b1b1b;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .yellow-btn:hover {
-  background: #FFAC1B;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background: #ffac1b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .instagram {
@@ -1932,6 +1932,8 @@ body._lock {
   height: 54px;
   background: #f9f9f9;
   color: #ababab;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .slider-1__toolbar_more a {
@@ -1942,6 +1944,13 @@ body._lock {
   .slider-1__toolbar_more {
     display: none;
   }
+}
+
+.slider-1__toolbar_more:hover {
+  background-color: #22a45e;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .slider-1__navigation {
@@ -1975,15 +1984,24 @@ body._lock {
   }
 }
 
-.slider-1__navigation nav ul li {
+.slider-1__navigation nav ul li a {
   padding: 15px 20px;
   color: #ababab;
   background: #f9f9f9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.slider-1__navigation nav ul li.active {
+.slider-1__navigation nav ul li a.active {
   background: #22a45e;
   color: #ffffff;
+}
+
+.slider-1__navigation nav ul li a:hover {
+  background-color: #22a45e;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .slider-1__navigation_switchers.title-switchers {
@@ -2065,12 +2083,27 @@ body._lock {
       -ms-flex-pack: center;
           justify-content: center;
   top: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 1440px) {
   .slider-1__arr-prev, .slider-1__arr-next {
     display: none !important;
   }
+}
+
+.slider-1__arr-prev:hover, .slider-1__arr-next:hover {
+  cursor: pointer;
+  background: #22a45e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slider-1__arr-prev:hover svg path, .slider-1__arr-next:hover svg path {
+  fill: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .slider-1__arr-prev.arr-rotate {
@@ -2121,10 +2154,31 @@ body._lock {
 .product-cart__title {
   margin-bottom: 4px;
   width: 248px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Цвета/Черный */
+  color: #1b1b1b;
 }
 
 .product-cart__supplement {
   margin-bottom: 4px;
+}
+
+.product-cart__supplement span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #a3a3a3;
 }
 
 .product-cart__supplement-2 {
@@ -2154,12 +2208,22 @@ body._lock {
 
 .product-cart__price_actual {
   color: #22a45e;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #22a45e;
 }
 
 .product-cart__price_old {
   color: #989898;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #989898;
 }
 
 .product-cart__counter {
@@ -2172,6 +2236,8 @@ body._lock {
 }
 
 .product-cart__counter_switcher {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background: #f8f8fa;
   width: 40px;
   height: 40px;
@@ -2184,6 +2250,18 @@ body._lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.product-cart__counter_switcher:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product-cart__counter_switcher:hover svg path {
+  fill: #22a45e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .product-cart__counter_input input {
