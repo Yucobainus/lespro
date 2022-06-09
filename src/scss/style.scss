@@ -286,7 +286,7 @@ body {
         }
         @media screen and (min-width: #{$mobileWidth + px}) {
             justify-content: space-around;
-            padding: 10px 0;
+            padding: 0;
         }
         @media screen and (max-width: #{$mobileWidth + px}) {
             background-color: #ffffff;
@@ -353,6 +353,13 @@ body {
             & ul {
                 display: flex;
                 column-gap: 60px;
+                li a {
+                    transition: 0.2s;
+                    &:hover {
+                        transition: 0.2s;
+                        color: #22a45e;
+                    }
+                }
             }
             @media screen and (min-width: #{$containerWidth + px}) {
                 display: flex;
@@ -430,6 +437,13 @@ body {
             span {
                 padding: 0 10px;
             }
+            & a {
+                transition: 0.2s;
+                &:hover {
+                    transition: 0.2s;
+                    color: #22a45e;
+                }
+            }
             &::before {
                 color: $lightGreen;
             }
@@ -442,9 +456,16 @@ body {
                 display: flex;
                 align-items: center;
                 column-gap: 5px;
-                padding: 20px 31px;
+                padding: 22px 31px;
                 border-left: 1px solid #eaeaea;
                 border-right: 1px solid #eaeaea;
+                span {
+                    transition: 0.2s;
+                    &:hover {
+                        transition: 0.2s;
+                        color: #22a45e;
+                    }
+                }
             }
             & a::before {
                 color: $lightGreen;
@@ -457,7 +478,7 @@ body {
         padding: 25px 0;
         column-gap: 5px;
         @media screen and (min-width: #{$smallDesktop + px}) {
-            column-gap: 20px;
+            column-gap: 5px;
             display: flex;
         }
         &_logo {
@@ -490,6 +511,12 @@ body {
             display: flex;
             align-items: center;
             width: 50%;
+            a {
+                transition: 0.5s;
+                &:hover {
+                    color: #22a45e;
+                }
+            }
             & a,
             span {
                 padding: 0 10px;
@@ -516,6 +543,19 @@ body {
         &_info-item-group {
             display: flex;
             flex-direction: column;
+            a {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 156% */
+
+                letter-spacing: 0.01em;
+                transition: 0.5s;
+                &:hover {
+                    color: #22a45e;
+                }
+            }
         }
 
         &_profile {
@@ -595,6 +635,15 @@ body {
         &_cart {
             padding: 22px;
             background-color: #f9f9f9;
+            transition: 0.5s;
+            &:hover {
+                transition: 0.5s;
+                background-color: #22a45e;
+                cursor: pointer;
+                &::before {
+                    color: white;
+                }
+            }
             @media screen and (max-width: #{$minWidth + px}) {
                 padding: 20px;
             }
@@ -726,6 +775,9 @@ body {
                     padding-right: 0px;
                 }
             }
+            a{
+                transition: .5s;
+            }
             a:hover {
                 color: #32bf73;
             }
@@ -739,12 +791,26 @@ body {
             @media screen and (min-width: #{$smallDesktop + px}) {
                 display: flex;
             }
+
             a {
                 white-space: nowrap;
+                padding-left: 8px;
+            }
+            svg.open {
+                visibility: hidden;
+                position: absolute;
             }
             &:hover {
                 transition: 150ms;
                 background-color: #ffac1b;
+                svg.close {
+                    visibility: hidden;
+                    position: absolute;
+                }
+                svg.open {
+                    visibility: visible;
+                    position: relative;
+                }
             }
             &:before {
                 margin-right: 10px;
@@ -781,11 +847,36 @@ body {
             display: flex;
             background-color: #efefef;
             padding: 0 24px;
+            transition: 0.5s;
+            div svg path {
+                transition: 0.5s;
+            }
+            &:hover {
+                background-color: #e8e8e8;
+                input[type="text"] {
+                    background-color: #e8e8e8;
+                    &::placeholder{
+                        color: #1b1b1b;
+                    }
+                }
+                div svg path {
+                    transition: 0.5s;
+                    fill: #22A45E;
+                }
+            }
             & input[type="text"] {
                 // background-image: url("../icons/search_green.svg");
                 // background-repeat: no-repeat;
                 // background-position: 90% 50%;
                 background-color: #efefef;
+                transition: 0.5s;
+                &::placeholder{
+                    color: #595959;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
             }
             @media screen and (max-width: #{$smallDesktop + px}) {
                 flex-grow: 1;
