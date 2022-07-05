@@ -3698,6 +3698,12 @@ body._lock {
           justify-content: center;
 }
 
+.catalog-grid__pages.p-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .catalog-grid__pages nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5304,5 +5310,502 @@ body._lock {
   .fixed-menu {
     display: block;
   }
+}
+
+.cart-title {
+  margin-bottom: 50px;
+}
+
+.cart-title .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-title__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 50px;
+  color: #1b1b1b;
+}
+
+.cart-title__clear {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #bdbdbd;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.cart-title__clear svg path {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.cart-title__clear:hover {
+  color: #f84f4f;
+}
+
+.cart-title__clear:hover svg path {
+  fill: #f84f4f;
+}
+
+.cart__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .cart__list {
+    width: 915px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cart__info {
+    width: 285px;
+  }
+}
+
+.list-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+}
+
+.list-cart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #eaeaea;
+  padding: 30px;
+  position: relative;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.list-cart__item:hover {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05), 0px 30px 30px -15px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05), 0px 30px 30px -15px rgba(0, 0, 0, 0.07);
+}
+
+.list-cart__item_pic {
+  width: 225px;
+  height: 160px;
+  position: relative;
+  margin-right: 60px;
+}
+
+.list-cart__item_explan {
+  position: absolute;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #f84f4f;
+}
+
+.list-cart__item_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.list-cart__item_name {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1b1b;
+  margin-bottom: 4px;
+}
+
+.list-cart__item_type {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #a3a3a3;
+  margin-bottom: 30px;
+}
+
+.list-cart__item_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-cart__item_count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  margin-right: 20px;
+}
+
+.list-cart__item_count-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 8px;
+  width: 40px;
+  height: 40px;
+  background: #f8f8fa;
+}
+
+.list-cart__item_count-btn svg path {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.list-cart__item_count-btn:hover {
+  cursor: pointer;
+}
+
+.list-cart__item_count-btn:hover svg path {
+  fill: #22a45e;
+}
+
+.list-cart__item_count-input input {
+  text-align: center;
+  padding: 5px 11px;
+  width: 110px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #121211;
+}
+
+.list-cart__item_count-price {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #22a45e;
+  margin-right: 171px;
+  white-space: nowrap;
+}
+
+.list-cart__item_checksum {
+  white-space: nowrap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #22a45e;
+}
+
+.list-cart__item_remove {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #bdbdbd;
+  top: 15px;
+  right: 15px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.list-cart__item_remove svg path {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.list-cart__item_remove:hover {
+  color: #f84f4f;
+}
+
+.list-cart__item_remove:hover svg path {
+  fill: #f84f4f;
+}
+
+.info-cart {
+  background: #f9f9f9;
+  padding: 30px;
+}
+
+.info-cart.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 15;
+}
+
+.info-cart.default {
+  position: static;
+}
+
+.info-cart__block:first-child {
+  margin-bottom: 15px;
+}
+
+.info-cart__block:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.info-cart__about {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #747474;
+}
+
+.info-cart__positions {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #121211;
+}
+
+.info-cart__sum {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #121211;
+}
+
+.info-cart__btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px;
+  width: 215px;
+  height: 56px;
+  background: #32bf73;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.info-cart__btn a:hover {
+  background: #22a45e;
+}
+
+.accept-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+.accept-list__item {
+  padding: 25px 40px 40px;
+  border: 1px solid #eaeaea;
+}
+
+.accept-list__item_title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1b1b1b;
+  margin-bottom: 15px;
+}
+
+.accept-list__item_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.accept-list__item_radio-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 22px 25px 22px 20px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.accept-list__item_radio-wrapper.focused {
+  padding: 21px 24px 21px 19px;
+  border: 2px solid #22a45e;
+}
+
+.accept-list__item_radio-wrapper:hover, .accept-list__item_radio-wrapper .accept-list__item_radio-text:hover {
+  cursor: pointer;
+}
+
+.accept-list__item_radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+  height: 20px;
+  width: 20px;
+}
+
+.accept-list__item_radio input[type="radio"]:checked ~ .filter__radio_custom::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #32bf73;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.accept-list__item_radio input[type="radio"]:checked ~ .filter__radio_custom {
+  border-color: #32bf73;
+}
+
+.accept-list__item_radio:hover > label:hover {
+  cursor: pointer;
+}
+
+.accept-list__item_custom {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+}
+
+.accept-list__item_radio-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5px;
+}
+
+.accept-list__item_radio-text-bold {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #1b1b1b;
+}
+
+.accept-list__item_radio-text-grey {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #595959;
 }
 /*# sourceMappingURL=style.css.map */
