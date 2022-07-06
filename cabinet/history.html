@@ -293,7 +293,7 @@
                         <li><a href="newpass.html">Сменить пароль</a></li>
                         <li><a href="mail.html">Изменить почту</a></li>
                         <li class="active"><a href="history.html">История заказов</a></li>
-                        <li><a href="#">Сообщения</a></li>
+                        <li ><a href="messages.html">Сообщения</a></li>
                         <li><a href="#">Выход</a></li>
                     </ul>
                 </nav>
@@ -995,7 +995,7 @@
                 </div>
 
 
-                <div class="slider-1__body slider-one">
+                <div class="slider-1__body slider-cabinet slider-one">
                     <div class="slider-1__slide">
                         <div class="product-cart w-100">
 
@@ -1823,6 +1823,11 @@
         historyButtons.forEach(el => {
             el.addEventListener('click', function () {
                 el.previousElementSibling.classList.toggle('active')
+                if(el.previousElementSibling.classList.contains('active')){
+                    el.innerHTML = "<button>Закрыть</button>"
+                }else{
+                    el.innerHTML = "<button>Подробнее</button>"
+                }
             })
         })
 

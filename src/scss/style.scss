@@ -4042,6 +4042,7 @@ body {
     // .cart__info
 
     &__info {
+        position: relative;
         @media screen and (min-width: #{$smallDesktop + px}) {
             width: 285px;
         }
@@ -4243,7 +4244,7 @@ body {
     padding: 30px;
 
     &.fixed {
-        position: fixed;
+        position: sticky;
         top: 0;
         z-index: 15;
     }
@@ -5113,4 +5114,18 @@ body {
 .green {
 }
 .black {
+}
+
+.h-93{
+    height: 93%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.slider-cabinet{
+    .slick-slide{
+        height: auto;
+    }
 }
