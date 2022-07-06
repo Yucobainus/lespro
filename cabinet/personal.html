@@ -1,3 +1,4 @@
+!
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" type="text/css" href="../src/css/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="../src/css/slick/slick-theme.css" />
-    <title>Оформление заказа</title>
+    <title>Личный кабинет</title>
 </head>
 
 <body>
@@ -248,7 +249,6 @@
     </header>
 
 
-
     <section class="bread">
         <div class="bread__container container">
             <div class="bread__nav">
@@ -275,66 +275,35 @@
         <div class="container">
             <div class="cart-title__text">
                 <h1>
-                    Оформление заказа
+                    Личный кабинет
                 </h1>
             </div>
         </div>
     </section>
 
 
-    <section class="cart">
-        <div class="container cart__container">
-            <div class="cart__list">
+
+    <div class="cabinet">
+        <div class="container cabinet__container">
+
+            <div class="cabinet__menu">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Личные данные</a></li>
+                        <li><a href="newpass.html">Сменить пароль</a></li>
+                        <li><a href="#">Изменить почту</a></li>
+                        <li><a href="#">История заказов</a></li>
+                        <li><a href="#">Сообщения</a></li>
+                        <li><a href="#">Выход</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="cabinet__content">
 
                 <div class="cart__list_wrapper accept-list">
 
-                    <div class="accept-list__item">
-                        <div class="accept-list__item_title">
-                            Способ доставки
-                        </div>
-                        <div class="accept-list__item_content">
 
-                            <div class="accept-list__item_radio-wrapper">
-
-                                <div class="accept-list__item_radio">
-                                    <input type="radio" name="delivery_type" id="delivery-type-1"
-                                        onchange="changeRadios()">
-                                    <span class="filter__radio_custom"></span>
-                                </div>
-
-                                <label for="delivery-type-1" class="accept-list__item_radio-text">
-                                    <div class="accept-list__item_radio-text-bold">
-                                        Доставка
-                                    </div>
-                                    <div class="accept-list__item_radio-text-grey">
-                                        Доставка рассчитывается индивидуально исходя из объема и дальности от нашего
-                                        склада.
-                                    </div>
-                                </label>
-
-                            </div>
-
-                            <div class="accept-list__item_radio-wrapper">
-
-                                <div class="accept-list__item_radio">
-                                    <input type="radio" name="delivery_type" id="delivery-type-2"
-                                        onchange="changeRadios()">
-                                    <span class="filter__radio_custom"></span>
-                                </div>
-
-                                <label for="delivery-type-2" class="accept-list__item_radio-text">
-                                    <div class="accept-list__item_radio-text-bold">
-                                        Самовывоз с нашего склада
-                                    </div>
-                                    <div class="accept-list__item_radio-text-grey">
-                                        Московская область, Красногорск, д. Гольёво, Центральная улица, 7А
-                                    </div>
-                                </label>
-
-                            </div>
-
-                        </div>
-                    </div>
 
                     <div class="accept-list__item">
                         <div class="accept-list__item_title">
@@ -344,21 +313,19 @@
 
                             <div class="accept-list__input-row">
                                 <div class="accept-list__input-item">
-                                    <input type="text" id="surname">
-                                    <label for="surname" id="surnameLabel">Фамилия<span class="red">*</span></label>
+                                    <input type="text" id="surname" value="Иванов">
                                 </div>
                                 <div class="accept-list__input-item">
-                                    <input type="text" id="name">
-                                    <label for="name" id="nameLabel">Имя<span class="red">*</span></label>
+                                    <input type="text" id="name" value="Иван">
                                 </div>
                             </div>
 
                             <div class="accept-list__input-row">
                                 <div class="accept-list__input-item">
-                                    <input type="text" placeholder="Отчество">
+                                    <input type="text" placeholder="Отчество" value="Иванович">
                                 </div>
                                 <div class="accept-list__input-item">
-                                    <input type="text" placeholder="Телефон">
+                                    <input type="text" placeholder="Телефон" value="+7 (900) 586-96-98">
                                 </div>
                             </div>
 
@@ -373,8 +340,7 @@
 
                             <div class="accept-list__address-row">
                                 <div class="accept-list__address-search">
-                                    <input type="text" id="city">
-                                    <label for="city" id="cityLabel">Город<span class="red">*</span></label>
+                                    <input type="text" id="city" value="Воронеж">
                                     <button class="search-icon">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -388,121 +354,24 @@
 
                             <div class="accept-list__address-row">
                                 <div class="accept-list__address-search">
-                                    <input type="text" id="address" class="address">
-                                    <label for="address" id="addressLabel" class="address">Адрес<span class="red">*</span></label>
+                                    <input type="text" id="address" class="address" value="ул. Воронежская, дом 18, квартира 1876">
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
-                    <div class="accept-list__item">
-                        <div class="accept-list__item_title">
-                            Способ оплаты
-                        </div>
-                        <div class="accept-list__item_content">
 
-                            <div class="accept-list__item_radio-wrapper">
 
-                                <div class="accept-list__item_radio">
-                                    <input type="radio" name="payment_type" id="payment-type-1"
-                                        onchange="changeRadios()">
-                                    <span class="filter__radio_custom"></span>
-                                </div>
 
-                                <label for="payment-type-1" class="accept-list__item_radio-text">
-                                    <div class="accept-list__item_radio-text-bold">
-                                        Наличные
-                                    </div>
-                                </label>
 
-                            </div>
-
-                            <div class="accept-list__item_radio-wrapper">
-
-                                <div class="accept-list__item_radio">
-                                    <input type="radio" name="payment_type" id="payment-type-2"
-                                        onchange="changeRadios()">
-                                    <span class="filter__radio_custom"></span>
-                                </div>
-
-                                <label for="payment-type-2" class="accept-list__item_radio-text">
-                                    <div class="accept-list__item_radio-text-bold">
-                                        Банковские карты
-                                    </div>
-                                </label>
-
-                            </div>
-
-                            <div class="accept-list__item_radio-wrapper">
-
-                                <div class="accept-list__item_radio">
-                                    <input type="radio" name="payment_type" id="payment-type-3"
-                                        onchange="changeRadios()">
-                                    <span class="filter__radio_custom"></span>
-                                </div>
-
-                                <label for="payment-type-3" class="accept-list__item_radio-text">
-                                    <div class="accept-list__item_radio-text-bold">
-                                        БаСчет (для Юр. лиц)
-                                    </div>
-                                </label>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    
-                    <div class="accept-list__item">
-                        <div class="accept-list__item_title">
-                            Комментарий к заказу
-                        </div>
-                        <div class="accept-list__item_content inputs">
-
-                            <div class="accept-list__comment-row">
-                                <div class="accept-list__comment-text">
-                                    <textarea placeholder="Текст сообщения" name="" id=""></textarea>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="cart__info">
-                <div class="cart__info_item">
-                    <div class="info-cart default" id="cart-info">
-                        <div class="info-cart__block">
-                            <div class="info-cart__about">
-                                О заказе
-                            </div>
-                            <div class="info-cart__positions">
-                                4 позиции на 88 кг.
-                            </div>
-                        </div>
-
-                        <div class="info-cart__block">
-                            <div class="info-cart__about">
-                                Итого
-                            </div>
-                            <div class="info-cart__sum">
-                                Итого: 35 560 ₽
-                            </div>
-                        </div>
-
-                        <div class="info-cart__btn">
-                            <a href="#">
-                                Оформить заказ
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
             </div>
+
+
         </div>
-    </section>
+    </div>
 
 
     <section class="slider-1 p-70-140 bg-grey mt-70">
@@ -1337,38 +1206,6 @@
     <!-- <script src="../src/js/script.js"></script> -->
     <script type="text/javascript" src="../src/js/slick/slick.min.js"></script>
 
-
-    <script>
-
-        function changeRadios() {
-
-            let radios = document.querySelectorAll('.accept-list__item_radio input')
-            radios.forEach(el => {
-
-                if (el.checked) {
-                    el.closest('.accept-list__item_radio-wrapper').classList.add('focused')
-                } else {
-                    el.closest('.accept-list__item_radio-wrapper').classList.remove('focused')
-                }
-            })
-
-        }
-    </script>
-
-    <script>
-        $(document).ready(function () {
-
-            var $menu = $("#cart-info")
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 400 && $menu.hasClass("default")) {
-                    $menu.removeClass("default").addClass("fixed");
-                } else if ($(this).scrollTop() <= 400 && $menu.hasClass("fixed")) {
-                    $menu.removeClass("fixed").addClass("default");  
-                }
-            });//scroll
-        });
-    </script>
-
     <script>
         $('.slider-one').slick({
             dots: false,
@@ -1405,55 +1242,6 @@
                     }
                 }
             ]
-        })
-
-
-        let surname = document.getElementById('surname')
-        let surnameLabel = document.getElementById('surnameLabel')
-
-        surname.addEventListener('input', function () {
-            surnameLabel.classList.add('hide')
-        })
-        surname.addEventListener('blur', function () {
-            if (surname.value == '') {
-                surnameLabel.classList.remove('hide')
-            }
-        })
-
-        let name = document.getElementById('name')
-        let nameLabel = document.getElementById('nameLabel')
-
-        name.addEventListener('input', function () {
-            nameLabel.classList.add('hide')
-        })
-        name.addEventListener('blur', function () {
-            if (name.value == '') {
-                nameLabel.classList.remove('hide')
-            }
-        })
-
-        let city = document.getElementById('city')
-        let cityLabel = document.getElementById('cityLabel')
-
-        city.addEventListener('input', function () {
-            cityLabel.classList.add('hide')
-        })
-        city.addEventListener('blur', function () {
-            if (city.value == '') {
-                cityLabel.classList.remove('hide')
-            }
-        })
-
-        let address = document.getElementById('address')
-        let addressLabel = document.getElementById('addressLabel')
-
-        address.addEventListener('input', function () {
-            addressLabel.classList.add('hide')
-        })
-        address.addEventListener('blur', function () {
-            if (address.value == '') {
-                addressLabel.classList.remove('hide')
-            }
         })
 
     </script>
