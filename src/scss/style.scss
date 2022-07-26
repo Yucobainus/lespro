@@ -5226,27 +5226,37 @@ body {
     background: #ffffff;
     box-shadow: 0px 50px 50px -15px rgba(0, 0, 0, 0.35);
 
-    &__checkbox{
-        margin-bottom: 30px;
-        label{
-            
-font-family: 'Manrope';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-/* Цвета/Черный */
+    position: relative;
 
-color: #1B1B1B;
- a{
-    display: inline;
-    font-family: 'Manrope';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-    color: #22A45E;
- }
+    &__close {
+        position: absolute;
+        top: 17px;
+        right: 17px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__checkbox {
+        margin-bottom: 30px;
+        label {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            /* Цвета/Черный */
+
+            color: #1b1b1b;
+            a {
+                display: inline;
+                font-family: "Manrope";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #22a45e;
+            }
         }
     }
 
@@ -5298,7 +5308,7 @@ line-height: 19px;
         // .p-order__info_form
 
         &_form {
-            border-right: 1px solid #EAEAEA;
+            border-right: 1px solid #eaeaea;
             width: 276px;
             display: flex;
             flex-direction: column;
@@ -5405,19 +5415,17 @@ line-height: 19px;
                 background: #ffffff;
                 /* Цвета/Серый 01 */
                 border: 1px solid #eaeaea;
-                &::placeholder{
-                    font-family: 'Manrope';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-/* identical to box height */
+                &::placeholder {
+                    font-family: "Manrope";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    /* identical to box height */
 
+                    /* Цвета/Серый текст */
 
-/* Цвета/Серый текст */
-
-color: #595959;
-
+                    color: #595959;
                 }
             }
         }
@@ -5500,27 +5508,23 @@ color: #595959;
             /* Цвета/Оранжевый */
 
             background: #ffbb45;
-            font-family: 'Manrope';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 26px;
-/* identical to box height, or 186% */
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 26px;
+            /* identical to box height, or 186% */
 
+            /* Цвета/Черный */
 
-/* Цвета/Черный */
-
-color: #1B1B1B;
-
+            color: #1b1b1b;
         }
     }
 }
 .text {
 }
 
-
 .p-order {
-
     // .p-order__icons-item
 
     &__icons-item {
@@ -5535,21 +5539,178 @@ color: #1B1B1B;
         // .p-order__icons-item_value
 
         &_value {
-            font-family: 'Manrope';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height, or 125% */
 
-display: flex;
-align-items: center;
-text-align: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
 
-/* Цвета/Черный */
+            /* Цвета/Черный */
 
-color: #121211;
-
+            color: #121211;
         }
+    }
+}
+
+.p-call {
+    max-width: 480px;
+    background: #ffffff;
+    box-shadow: 0px 50px 50px -15px rgba(0, 0, 0, 0.35);
+    position: relative;
+
+    &.p-info{
+        padding: 125px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 50px 50px -15px rgba(0, 0, 0, 0.35);
+        .p-call__container{
+            padding: 0;
+        }
+    }
+    // .p-call__container
+
+    &__container {
+        padding: 40px 60px 60px;
+    }
+
+    // .p-call__title
+
+    &__title {
+        margin-bottom: 30px;
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 40px;
+        /* identical to box height, or 133% */
+
+        text-align: center;
+
+        /* Цвета/Черный */
+
+        color: #1b1b1b;
+    }
+
+    // .p-call__input
+
+    &__input {
+        margin-bottom: 30px;
+        input {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 6px;
+            width: 360px;
+            height: 60px;
+
+            /* Цвета/Белый */
+
+            background: #ffffff;
+            /* Цвета/Серый 01 */
+
+            border: 1px solid #eaeaea;
+            &::placeholder {
+                font-family: "Manrope";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                /* identical to box height */
+
+                /* Цвета/Серый текст */
+
+                color: #595959;
+            }
+        }
+    }
+
+    &__expl {
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+        a {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+
+            /* Цвета/Серый текст */
+
+            color: #595959;
+        }
+    }
+
+    // .p-call__submit
+
+    &__submit {
+        input {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 30px;
+            gap: 8px;
+
+            /* Цвета/Оранжевый */
+
+            background: #ffbb45;
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 26px;
+            /* identical to box height, or 186% */
+
+            /* Цвета/Черный */
+
+            color: #1b1b1b;
+        }
+    }
+}
+
+.p-info {
+    // .p-info__title
+
+    &__title {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 40px;
+        /* or 133% */
+
+        text-align: center;
+
+        /* Цвета/Черный */
+
+        color: #1b1b1b;
+    }
+
+    // .p-info__text
+
+    &__text {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 167% */
+
+        text-align: center;
+
+        /* Цвета/Серый текст */
+
+        color: #595959;
     }
 }
