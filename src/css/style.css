@@ -378,6 +378,18 @@ body._lock {
   background-color: #32bf73;
 }
 
+.header__head_burger.open .menu-icon {
+  opacity: 0;
+  z-index: -10;
+  position: absolute;
+}
+
+.header__head_burger.open .header__head_burger-close {
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+}
+
 @media screen and (min-width: 320px) {
   .header__head_burger {
     width: 50px;
@@ -7217,5 +7229,76 @@ body._lock {
   text-align: center;
   /* Цвета/Серый текст */
   color: #595959;
+}
+
+@media (max-width: 1230px) {
+  .footer__pay_col:last-child a {
+    white-space: normal;
+  }
+}
+
+.mobile-header {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+  opacity: 0;
+  height: 100%;
+  z-index: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 305px;
+  overflow-y: scroll;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  padding: 0 32px;
+}
+
+.mobile-header.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.mobile-header__item.link {
+  padding: 16px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.mobile-header__item.link a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* Цвета/Черный */
+  color: #1b1b1b;
+}
+
+.mobile-header__item.location {
+  padding: 25px 0;
+}
+
+.mobile-header__item.location a {
+  font-size: 14px;
+}
+
+.mobile-header__item.footer__navigation_social {
+  padding-left: 0;
+}
+
+.header__head_burger-close {
+  opacity: 0;
+  z-index: -10;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
