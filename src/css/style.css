@@ -6641,4 +6641,384 @@ body._lock {
   background: #f9f9f9;
   border-radius: 100px;
 }
+
+.p-order {
+  max-width: 560px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 50px 50px -15px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 50px 50px -15px rgba(0, 0, 0, 0.35);
+}
+
+.p-order__checkbox {
+  margin-bottom: 30px;
+}
+
+.p-order__checkbox label {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* Цвета/Черный */
+  color: #1B1B1B;
+}
+
+.p-order__checkbox label a {
+  display: inline;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #22A45E;
+}
+
+.p-order__container {
+  padding: 40px 60px 60px;
+}
+
+.p-order__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 40px;
+  /* identical to box height, or 133% */
+  /* Цвета/Черный */
+  color: #1b1b1b;
+  margin-bottom: 10px;
+}
+
+.p-order__desc {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Цвета/Серый текст */
+  color: #595959;
+  margin-bottom: 30px;
+}
+
+.p-order__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-order__info_form {
+  border-right: 1px solid #EAEAEA;
+  width: 276px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+}
+
+.p-order__info_title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  /* Цвета/Черный */
+  color: #1b1b1b;
+}
+
+.p-order__info_icons {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 31px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 50px;
+}
+
+.p-order__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.p-order__count_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 8px;
+  gap: 10px;
+  width: 50px;
+  height: 50px;
+  background: #f8f8fa;
+}
+
+.p-order__count_input input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 11px;
+  gap: 10px;
+  width: 110px;
+  height: 50px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* Цвета/Черный */
+  color: #121211;
+}
+
+.p-order__input {
+  position: relative;
+}
+
+.p-order__input.text {
+  margin-bottom: 30px;
+}
+
+.p-order__input.text input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  gap: 6px;
+  width: 440px;
+  height: 60px;
+  /* Цвета/Белый */
+  background: #ffffff;
+  /* Цвета/Серый 01 */
+  border: 1px solid #eaeaea;
+}
+
+.p-order__input.text input::-webkit-input-placeholder {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Цвета/Серый текст */
+  color: #595959;
+}
+
+.p-order__input.text input:-ms-input-placeholder {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Цвета/Серый текст */
+  color: #595959;
+}
+
+.p-order__input.text input::-ms-input-placeholder {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Цвета/Серый текст */
+  color: #595959;
+}
+
+.p-order__input.text input::placeholder {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Цвета/Серый текст */
+  color: #595959;
+}
+
+.p-order__input span {
+  position: absolute;
+  top: 50%;
+  right: 67px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.p-order__input input[type="number"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background: #ffffff;
+  /* Цвета/Серый 01 */
+  border: 1px solid #eaeaea;
+  gap: 6px;
+  width: 225px;
+  height: 50px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+  display: flex;
+  align-items: center;
+  /* Цвета/Черный */
+  color: #121211;
+}
+
+.p-order__price {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  background: #f9f9f9;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Цвета/Серый текст */
+  color: #595959;
+}
+
+.p-order__price span {
+  font-size: 22px;
+  font-weight: 700;
+  color: #121211;
+}
+
+.p-order__submit input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px;
+  gap: 8px;
+  height: 60px;
+  width: 100%;
+  /* Цвета/Оранжевый */
+  background: #ffbb45;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  /* identical to box height, or 186% */
+  /* Цвета/Черный */
+  color: #1B1B1B;
+}
+
+.p-order__icons-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.p-order__icons-item_value {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  /* Цвета/Черный */
+  color: #121211;
+}
 /*# sourceMappingURL=style.css.map */
